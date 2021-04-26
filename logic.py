@@ -124,12 +124,27 @@ def logic(query):
     response = []
 
     # preprocessing
-    query = "US" if query.lower() == "usa"              else query
-    query = "GB" if query.lower() == "uk"               else query
-    query = "GB" if query.lower() == "england"          else query
-    query = "GB" if query.lower() == "scotland"         else query
-    query = "GB" if query.lower() == "wales"            else query
-    query = "GB" if query.lower() == "northern ireland" else query
+    query = "US" if query.lower() == "usa"               else query
+    query = "GB" if query.lower() == "uk"                else query
+    query = "GB" if query.lower() == "england"           else query
+    query = "GB" if query.lower() == "scotland"          else query
+    query = "GB" if query.lower() == "wales"             else query
+    query = "GB" if query.lower() == "northern ireland"  else query
+    query = "KP" if query.lower() == "north korea"       else query
+    query = "KR" if query.lower() == "south korea"       else query
+    query = "WS" if query.lower() == "samoa"             else query
+    query = "AS" if query.lower() == "american samoa"    else query
+    query = "CG" if query.lower() == "congo"             else query
+    query = "CD" if query.lower() == "democratic congo"  else query
+    query = "GN" if query.lower() == "guinea"            else query
+    query = "GQ" if query.lower() == "equatorial guinea" else query
+    query = "SD" if query.lower() == "sudan"             else query
+    query = "SS" if query.lower() == "south sudan"       else query
+    
+    
+    
+    
+    
     
     # garbage
     if len(query) < 2:
