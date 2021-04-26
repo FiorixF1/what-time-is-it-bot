@@ -1,8 +1,11 @@
 import datetime
 import pytz
+import re
 
 from flags import flags
 
+# in order to avoid spam, many timezones are removed (also because they make no sense)
+# why 12 timezones for Argentina and even 6 for Alaska?
 removed_timezones = {
     "America/Adak",
     "America/Araguaina",
@@ -89,12 +92,22 @@ removed_timezones = {
 }
 
 
+
 def get_time_from_region(code, region):
     emoji = "🏳️"
     for flag in flags:
-        if code and flag["code"] == code or flag["name"] in region:
+        # use country code when available, otherwise fallback to region name
+        # matching is done with whole words only, so "man" matches with "Isle of Man" but not with "Germany"
+        if code and flag["code"] == code or not code and re.search(rf'\b{flag["name"]}\b', region.replace('_', ' '), re.IGNORECASE):
             emoji = flag["emoji"]
             break
+
+    if emoji == "🏳️" and not code:
+        for flag in flags:
+            # if you have not found a country, do a fuzzy research (this way "Ital" matches with "Italy")
+            if flag["name"].lower() in region.lower():
+                emoji = flag["emoji"]
+                break
 
     if '/' in region:
         city = region[region.rfind('/')+1:].replace('_', ' ')
@@ -111,34 +124,46 @@ def logic(query):
     response = []
 
     # preprocessing
-    query = "US" if query.lower() == "usa" else query
-    query = "GB" if query.lower() == "uk" else query
-    query = "GB" if query.lower() == "england" else query
-    query = "GB" if query.lower() == "scotland" else query
-    query = "GB" if query.lower() == "wales" else query
+    query = "US" if query.lower() == "usa"              else query
+    query = "GB" if query.lower() == "uk"               else query
+    query = "GB" if query.lower() == "england"          else query
+    query = "GB" if query.lower() == "scotland"         else query
+    query = "GB" if query.lower() == "wales"            else query
     query = "GB" if query.lower() == "northern ireland" else query
     
+    # garbage
+    if len(query) < 2:
+        return ''
+
     if len(query) == 2:
         # query by country code
         country_code = query.upper()
-        country_name = pytz.country_names.get(country_code, '')
         timezones = set(pytz.country_timezones.get(country_code, [])) - removed_timezones
 
         for region in timezones:
             response.append(get_time_from_region(country_code, region))
     elif query.lower() == "utc":
         # handle UTC separately
-        response.append(get_time_from_region('', "UTC"))
-    else:
+        response.append(get_time_from_region('', "UTC").replace("🏳️", "🌍"))
+    
+    # search by country or city name (also for queries with two letters)
+    if response == []:
         country_code = None
         for key in pytz.country_names:
-            if query.lower() in pytz.country_names[key].lower():
+            # matching is done with whole words only, so "man" matches with "Isle of Man" but not with "Germany"
+            if re.search(rf"\b{query}\b", pytz.country_names[key], re.IGNORECASE):
                 country_code = key
                 break
+        
+        if country_code == None:
+            # if you have not found a country, do a fuzzy research (this way "Ital" matches with "Italy")
+            for key in pytz.country_names:
+                if query.lower() in pytz.country_names[key].lower():
+                    country_code = key
+                    break
 
         if country_code != None:
             # query by country name
-            country_name = pytz.country_names.get(country_code, '')
             timezones = set(pytz.country_timezones.get(country_code, [])) - removed_timezones
 
             for region in timezones:
@@ -156,27 +181,4 @@ def logic(query):
                         response.append(get_time_from_region('', region))
 
     return '\n'.join(response)
-
-
-
-
-
-
-"""
-        for timezone in timezones:
-            country_code, region = timezone
-            
-            if query.upper() == country_code or len(query) > 2 and query.lower().replace(' ', '_') in region.lower():
-                
-                city = region[region.rfind('/')+1:].replace('_', ' ')
-                for flag in flags:
-                    if flag["code"] == country_code:
-                        emoji = flag["emoji"]
-                        break
-                
-                tz = pytz.timezone(region)
-                now = datetime.datetime.now(tz)
-                response.append("{} {}: {}".format(emoji, city, now.strftime('%Y-%m-%d %H:%M:%S')))
-"""
-
 

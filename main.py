@@ -11,7 +11,7 @@ URL = "https://api.telegram.org/bot{}/".format(TELE_TOKEN)
 
 
 # return (command, parameter)
-def getCommand(text):
+def get_command(text):
     # "usual text message"
     if text[0] != '/':
         return ('', '')
@@ -47,20 +47,20 @@ def getCommand(text):
 
 
 def send_message(text, chat_id):
-    command, parameter = getCommand(text)
+    command, parameter = get_command(text)
 
     http = urllib3.PoolManager()
     if command == "/start":
-        reply = "Hello! I can tell you what time it is around the world! Just send me /time followed by a country code or a city name. For example /time it or /time Rome"
+        reply = "Hello! I can tell you what time it is around the world! Just send me /time followed by a country code, a country name or a city name. For example /time it or /time Italy or /time Rome"
         url = URL + "sendMessage?text={}&chat_id={}".format(reply, chat_id)
         http.request('GET', url)
     elif command == "/help":
-        reply = "Send /time followed by a country code or a city name. For example /time it or /time Rome"
+        reply = "Send /time followed by a country code, a country name or a city name. For example /time it or /time Italy or /time Rome"
         url = URL + "sendMessage?text={}&chat_id={}".format(reply, chat_id)
         http.request('GET', url)
     elif command == "/time":
         if parameter == '':
-            reply = "Send /time followed by a country code or a city name. For example /time it or /time Rome"
+            reply = "Send /time followed by a country code, a country name or a city name. For example /time it or /time Italy or /time Rome"
         else:
             reply = logic(parameter)
             if reply == '':
