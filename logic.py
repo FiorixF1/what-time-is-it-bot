@@ -130,6 +130,7 @@ def logic(query):
     query = "GB" if query.lower() == "scotland"          else query
     query = "GB" if query.lower() == "wales"             else query
     query = "GB" if query.lower() == "northern ireland"  else query
+    query = "KR" if query.lower() == "korea"             else query
     query = "KP" if query.lower() == "north korea"       else query
     query = "KR" if query.lower() == "south korea"       else query
     query = "WS" if query.lower() == "samoa"             else query
@@ -140,12 +141,7 @@ def logic(query):
     query = "GQ" if query.lower() == "equatorial guinea" else query
     query = "SD" if query.lower() == "sudan"             else query
     query = "SS" if query.lower() == "south sudan"       else query
-    
-    
-    
-    
-    
-    
+
     # garbage
     if len(query) < 2:
         return ''
