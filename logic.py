@@ -91,6 +91,12 @@ removed_timezones = {
     "Europe/Kirov"
 }
 
+# list of countries and regions not handled by the libraries
+special_codes = {
+    # country code: (       timezone,       city, flag)
+    "XK":           ("Europe/Tirane", "Pristina", "🇽🇰")
+}
+
 
 
 def get_time_from_region(code, region):
@@ -120,6 +126,14 @@ def get_time_from_region(code, region):
 
 
 
+def get_time_from_special_region(code):
+    region, city, emoji = special_codes[code]
+    tz = pytz.timezone(region)
+    now = datetime.datetime.now(tz)
+    return "{} {}: {}".format(emoji, city, now.strftime('%Y-%m-%d %H:%M:%S'))
+
+
+
 def logic(query):
     response = []
 
@@ -141,6 +155,9 @@ def logic(query):
     query = "GQ" if query.lower() == "equatorial guinea" else query
     query = "SD" if query.lower() == "sudan"             else query
     query = "SS" if query.lower() == "south sudan"       else query
+    query = "MO" if query.lower() == "macao"             else query
+    query = "XK" if query.lower() == "kosovo"            else query
+    query = "XK" if query.lower() == "pristina"          else query
 
     # garbage
     if len(query) < 2:
@@ -149,10 +166,13 @@ def logic(query):
     if len(query) == 2:
         # query by country code
         country_code = query.upper()
-        timezones = set(pytz.country_timezones.get(country_code, [])) - removed_timezones
-
-        for region in timezones:
-            response.append(get_time_from_region(country_code, region))
+        
+        if country_code in special_codes:
+            response.append(get_time_from_special_region(country_code))
+        else:
+            timezones = set(pytz.country_timezones.get(country_code, [])) - removed_timezones
+            for region in timezones:
+                response.append(get_time_from_region(country_code, region))
     elif query.lower() == "utc":
         # handle UTC separately
         response.append(get_time_from_region('', "UTC").replace("🏳️", "🌍"))
