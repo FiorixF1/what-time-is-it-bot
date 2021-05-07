@@ -1,136 +1,46 @@
+from collections import namedtuple
+import unidecode
 import datetime
+import pickle
 import pytz
 import re
 
-from flags import flags
+#Country = namedtuple("Country", ["code", "emoji", "name", "timezones"])
 
-# in order to avoid spam, many timezones are removed (also because they make no sense)
-# why 12 timezones for Argentina and even 6 for Alaska?
-removed_timezones = {
-    "America/Adak",
-    "America/Araguaina",
-    "America/Argentina/Catamarca",
-    "America/Argentina/Cordoba",
-    "America/Argentina/Jujuy",
-    "America/Argentina/La_Rioja",
-    "America/Argentina/Mendoza",
-    "America/Argentina/Rio_Gallegos",
-    "America/Argentina/Salta",
-    "America/Argentina/San_Juan",
-    "America/Argentina/San_Luis",
-    "America/Argentina/Tucuman",
-    "America/Argentina/Ushuaia",
-    "America/Atikokan",
-    "America/Bahia",
-    "America/Bahia_Banderas",
-    "America/Blanc-Sablon",
-    "America/Boa_Vista",
-    "America/Boise",
-    "America/Cambridge_Bay",
-    "America/Campo_Grande",
-    "America/Cancun",
-    "America/Creston",
-    "America/Cuiaba",
-    "America/Dawson",
-    "America/Dawson_Creek",
-    "America/Eirunepe",
-    "America/Fort_Nelson",
-    "America/Glace_Bay",
-    "America/Goose_Bay",
-    "America/Hermosillo",
-    "America/Indiana/Knox",
-    "America/Indiana/Marengo",
-    "America/Indiana/Petersburg",
-    "America/Indiana/Tell_City",
-    "America/Indiana/Vevay",
-    "America/Indiana/Vincennes",
-    "America/Indiana/Winamac",
-    "America/Inuvik",
-    "America/Iqaluit",
-    "America/Juneau",
-    "America/Kentucky/Louisville",
-    "America/Kentucky/Monticello",
-    "America/Maceio",
-    "America/Matamoros",
-    "America/Mazatlan",
-    "America/Menominee",
-    "America/Merida",
-    "America/Metlakatla",
-    "America/Moncton",
-    "America/Monterrey",
-    "America/Nipigon",
-    "America/Nome",
-    "America/Noronha",
-    "America/North_Dakota/Beulah",
-    "America/North_Dakota/Center",
-    "America/North_Dakota/New_Salem",
-    "America/Ojinaga",
-    "America/Pangnirtung",
-    "America/Porto_Velho",
-    "America/Rainy_River",
-    "America/Rankin_Inlet",
-    "America/Resolute",
-    "America/Rio_Branco",
-    "America/Santarem",
-    "America/Sitka",
-    "America/St_Johns",
-    "America/Swift_Current",
-    "America/Thunder_Bay",
-    "America/Whitehorse",
-    "America/Yakutat",
-    "America/Yellowknife",
-    "Asia/Chita",
-    "Asia/Urumqi",
-    "Australia/Broken_Hill",
-    "Australia/Currie",
-    "Australia/Eucla",
-    "Australia/Hobart",
-    "Australia/Lindeman",
-    "Australia/Lord_Howe",
-    "Europe/Astrakhan",
-    "Europe/Kirov"
-}
+#dictionary = pickle.load(open("db.p", "rb"))
 
-# list of countries and regions not handled by the libraries
-special_codes = {
-    # country code: (       timezone,       city, flag)
-    "XK":           ("Europe/Tirane", "Pristina", "🇽🇰")
-}
+from generator import dictionary
+
+def strict_search(query, string):
+    query = unidecode.unidecode(query)
+    string = unidecode.unidecode(string)
+    return re.search(rf"\b{query}\b", string, re.IGNORECASE)
+
+def fuzzy_search(query, string):
+    query = unidecode.unidecode(query.lower())
+    string = unidecode.unidecode(string.lower())
+    return query in string
+
+def fuzzy_equal(query, string):
+    query = unidecode.unidecode(query.lower())
+    string = unidecode.unidecode(string.lower())
+    return query == string
 
 
 
-def get_time_from_region(code, region):
-    emoji = "🏳️"
-    for flag in flags:
-        # use country code when available, otherwise fallback to region name
-        # matching is done with whole words only, so "man" matches with "Isle of Man" but not with "Germany"
-        if code and flag["code"] == code or not code and re.search(rf'\b{flag["name"]}\b', region.replace('_', ' '), re.IGNORECASE):
-            emoji = flag["emoji"]
-            break
+def generate_time_from_country(country):
+    result = []
+    for timezone, city in country.timezones:
+        result.append(generate_time(country.code, country.emoji, country.name, timezone, city))
+    return '\n'.join(result)
 
-    if emoji == "🏳️" and not code:
-        for flag in flags:
-            # if you have not found a country, do a fuzzy research (this way "Ital" matches with "Italy")
-            if flag["name"].lower() in region.lower():
-                emoji = flag["emoji"]
-                break
-
-    if '/' in region:
-        city = region[region.rfind('/')+1:].replace('_', ' ')
-    else:
-        city = region.replace('_', ' ')
-
-    tz = pytz.timezone(region)
+def generate_time(code, emoji, name, timezone, city):
+    tz = pytz.timezone(timezone)
     now = datetime.datetime.now(tz)
-    return "{} {}: {}".format(emoji, city, now.strftime('%Y-%m-%d %H:%M:%S'))
-
-
-
-def get_time_from_special_region(code):
-    region, city, emoji = special_codes[code]
-    tz = pytz.timezone(region)
-    now = datetime.datetime.now(tz)
-    return "{} {}: {}".format(emoji, city, now.strftime('%Y-%m-%d %H:%M:%S'))
+    return "{} {}{}: {}".format(emoji,
+                                city,
+                                f" ({name})" if name != "" and name != city else "",
+                                now.strftime('%Y-%m-%d %H:%M:%S'))
 
 
 
@@ -138,78 +48,54 @@ def logic(query):
     response = []
 
     # preprocessing
-    query = "US" if query.lower() == "usa"               else query
-    query = "GB" if query.lower() == "uk"                else query
-    query = "GB" if query.lower() == "england"           else query
-    query = "GB" if query.lower() == "scotland"          else query
-    query = "GB" if query.lower() == "wales"             else query
-    query = "GB" if query.lower() == "northern ireland"  else query
-    query = "KR" if query.lower() == "korea"             else query
-    query = "KP" if query.lower() == "north korea"       else query
-    query = "KR" if query.lower() == "south korea"       else query
-    query = "WS" if query.lower() == "samoa"             else query
-    query = "AS" if query.lower() == "american samoa"    else query
-    query = "CG" if query.lower() == "congo"             else query
-    query = "CD" if query.lower() == "democratic congo"  else query
-    query = "GN" if query.lower() == "guinea"            else query
-    query = "GQ" if query.lower() == "equatorial guinea" else query
-    query = "SD" if query.lower() == "sudan"             else query
-    query = "SS" if query.lower() == "south sudan"       else query
-    query = "MO" if query.lower() == "macao"             else query
-    query = "XK" if query.lower() == "kosovo"            else query
-    query = "XK" if query.lower() == "pristina"          else query
+    query = "US" if fuzzy_equal(query, "usa")               else query
+    query = "GB" if fuzzy_equal(query, "uk")                else query
+    query = "KR" if fuzzy_equal(query, "korea")             else query
+    query = "KP" if fuzzy_equal(query, "north korea")       else query
+    query = "KR" if fuzzy_equal(query, "south korea")       else query
+    query = "KR" if fuzzy_equal(query, "corea")             else query
+    query = "KP" if fuzzy_equal(query, "north corea")       else query
+    query = "KR" if fuzzy_equal(query, "south corea")       else query
+    query = "WS" if fuzzy_equal(query, "samoa")             else query
+    query = "AS" if fuzzy_equal(query, "american samoa")    else query
+    query = "CG" if fuzzy_equal(query, "congo")             else query
+    query = "CD" if fuzzy_equal(query, "democratic congo")  else query
 
     # garbage
     if len(query) < 2:
         return ''
 
-    if len(query) == 2:
-        # query by country code
-        country_code = query.upper()
-        
-        if country_code in special_codes:
-            response.append(get_time_from_special_region(country_code))
-        else:
-            timezones = set(pytz.country_timezones.get(country_code, [])) - removed_timezones
-            for region in timezones:
-                response.append(get_time_from_region(country_code, region))
-    elif query.lower() == "utc":
-        # handle UTC separately
-        response.append(get_time_from_region('', "UTC").replace("🏳️", "🌍"))
-    
-    # search by country or city name (also for queries with two letters)
-    if response == []:
+    # query by country code
+    country_code = query.upper()
+    if country_code in dictionary:
+        response.append(generate_time_from_country(dictionary[country_code]))
+    else:
         country_code = None
-        for key in pytz.country_names:
+        # query by country name
+        for key in dictionary:
             # matching is done with whole words only, so "man" matches with "Isle of Man" but not with "Germany"
-            if re.search(rf"\b{query}\b", pytz.country_names[key], re.IGNORECASE):
+            if strict_search(query, dictionary[key].name):
                 country_code = key
                 break
-        
         if country_code == None:
             # if you have not found a country, do a fuzzy research (this way "Ital" matches with "Italy")
-            for key in pytz.country_names:
-                if query.lower() in pytz.country_names[key].lower():
+            for key in dictionary:
+                if fuzzy_search(query, dictionary[key].name):
                     country_code = key
                     break
-
+        
         if country_code != None:
             # query by country name
-            timezones = set(pytz.country_timezones.get(country_code, [])) - removed_timezones
-
-            for region in timezones:
-                response.append(get_time_from_region(country_code, region))
+            response.append(generate_time_from_country(dictionary[country_code]))
         else:
             # query by city name
-            for country_code in pytz.country_names:
-                for region in set(pytz.country_timezones.get(country_code, [])) - removed_timezones:
-                    if query.lower().replace(' ', '_') in region.lower():
-                        response.append(get_time_from_region(country_code, region))
-            if len(response) == 0:
-                # other queries
-                for region in pytz.common_timezones:
-                    if query.lower().replace(' ', '_') in region.lower():
-                        response.append(get_time_from_region('', region))
+            for country_code in dictionary:
+                if len(response) != 0:
+                    break
+                country = dictionary[country_code]
+                for timezone, city in country.timezones:
+                    if fuzzy_search(query, city):
+                        response.append(generate_time(country.code, country.emoji, country.name, timezone, city))
 
     return '\n'.join(response)
 
