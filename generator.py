@@ -122,11 +122,13 @@ REMOVED_TIMEZONES = {
     "Europe/Astrakhan",
     "Europe/Busingen",
     "Europe/Kirov",
+    "US/Alaska",
     "US/Arizona",
     "US/Central",
     "US/Eastern",
+    "US/Hawaii",
     "US/Mountain",
-    "US/Pacific"
+    "US/Pacific",
 }
 
 for country in dictionary:
@@ -137,11 +139,19 @@ for country in dictionary:
 
 
 # Step 3: add custom entries
-dictionary["XK"]  = Country("XK",  "🇽🇰", "Kosovo",   [("Europe/Tirane", "Pristina")])
-dictionary["ENG"] = Country("ENG", "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "England",  [("Europe/London", "London")])
-dictionary["SCT"] = Country("SCT", "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "Scotland", [("Europe/London", "Edimburgh")])
-dictionary["WLS"] = Country("WLS", "🏴󠁧󠁢󠁷󠁬󠁳󠁿", "Wales",    [("Europe/London", "Cardiff")])
-dictionary["UTC"] = Country("UTC", "🌍", "World",    [("UTC", "UTC")])
+dictionary["XK"]    = Country("XK",    "🇽🇰", "Kosovo",   [("Europe/Tirane", "Pristina")])
+dictionary["ENG"]   = Country("ENG",   "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "England",  [("Europe/London", "London")])
+dictionary["SCT"]   = Country("SCT",   "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "Scotland", [("Europe/London", "Edimburgh")])
+dictionary["WLS"]   = Country("WLS",   "🏴󠁧󠁢󠁷󠁬󠁳󠁿", "Wales",    [("Europe/London", "Cardiff")])
+dictionary["RU-CE"] = Country("RU-CE", "🇷🇺󠁧󠁢󠁷󠁬󠁳󠁿", "Chechnya", [("Europe/Moscow", "Grozny")])
+dictionary["KGD"]   = Country("KGD",   "🇷🇺󠁧󠁢󠁷󠁬󠁳󠁿", "Russia",   [("Europe/Kaliningrad", "Königsberg")])
+dictionary["UA-43"] = Country("UA-43", "🇺🇦", "Crimea",   [("Europe/Simferopol", "Simferopol")])
+dictionary["US-AK"] = Country("US-AK", "🇺🇸󠁧󠁢󠁷󠁬󠁳󠁿", "Alaska",   [("US/Alaska", "Anchorage")])
+dictionary["US-HI"] = Country("US-HI", "🇺🇸󠁧󠁢󠁷󠁬󠁳󠁿", "Hawaii",   [("US/Hawaii", "Honolulu")])
+dictionary["US-FL"] = Country("US-FL", "🇺🇸󠁧󠁢󠁷󠁬󠁳󠁿", "Florida",  [("America/New_York", "Miami")])
+dictionary["CN-BJ"] = Country("CN-BJ", "🇨🇳󠁧󠁢󠁷󠁬󠁳󠁿", "China",    [("Asia/Shanghai", "Beijing")])
+dictionary["IN-DL"] = Country("IN-DL", "🇮🇳", "India",    [("Asia/Kolkata", "New Delhi")])
+dictionary["UTC"]   = Country("UTC",   "🌍", "World",    [("UTC", "UTC")])
 
 
 

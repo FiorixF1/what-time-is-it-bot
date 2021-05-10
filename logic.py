@@ -31,15 +31,15 @@ def fuzzy_equal(query, string):
 def generate_time_from_country(country):
     result = []
     for timezone, city in country.timezones:
-        result.append(generate_time(country.code, country.emoji, country.name, timezone, city))
+        result.append(generate_time(country.code, country.emoji, country.name, timezone, city, False))
     return '\n'.join(result)
 
-def generate_time(code, emoji, name, timezone, city):
+def generate_time(code, emoji, name, timezone, city, show_country=True):
     tz = pytz.timezone(timezone)
     now = datetime.datetime.now(tz)
     return "{} {}{}: {}".format(emoji,
                                 city,
-                                f" ({name})" if name != "" and name != city else "",
+                                f" ({name})" if show_country and name != "" and name != city else "",
                                 now.strftime('%Y-%m-%d %H:%M:%S'))
 
 
@@ -60,6 +60,7 @@ def logic(query):
     query = "AS" if fuzzy_equal(query, "american samoa")    else query
     query = "CG" if fuzzy_equal(query, "congo")             else query
     query = "CD" if fuzzy_equal(query, "democratic congo")  else query
+    query = "MM" if fuzzy_equal(query, "burma")             else query
 
     # garbage
     if len(query) < 2:
