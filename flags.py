@@ -1,4 +1,4 @@
-# got from https://github.com/jonathan-kosgei/emoji-flags
+# got from https://github.com/jonathan-kosgei/emoji-flags but updated
 
 flags = [
     {
@@ -278,8 +278,8 @@ flags = [
         "code": "CD",
         "emoji": "🇨🇩",
         "unicode": "U+1F1E8 U+1F1E9",
-        "name": "Congo",
-        "title": "flag for Congo"
+        "name": "Democratic Congo",
+        "title": "flag for Democratic Congo"
     },
     {
         "code": "CF",
@@ -887,8 +887,8 @@ flags = [
         "code": "LA",
         "emoji": "🇱🇦",
         "unicode": "U+1F1F1 U+1F1E6",
-        "name": "Lao People's Democratic Republic",
-        "title": "flag for Lao People's Democratic Republic"
+        "name": "Laos",
+        "title": "flag for Laos"
     },
     {
         "code": "LB",
@@ -1013,8 +1013,8 @@ flags = [
         "code": "MK",
         "emoji": "🇲🇰",
         "unicode": "U+1F1F2 U+1F1F0",
-        "name": "Macedonia",
-        "title": "flag for Macedonia"
+        "name": "North Macedonia",
+        "title": "flag for North Macedonia"
     },
     {
         "code": "ML",
@@ -1286,8 +1286,8 @@ flags = [
         "code": "PS",
         "emoji": "🇵🇸",
         "unicode": "U+1F1F5 U+1F1F8",
-        "name": "Palestinian Territory",
-        "title": "flag for Palestinian Territory"
+        "name": "Palestine",
+        "title": "flag for Palestine"
     },
     {
         "code": "PT",
@@ -1489,8 +1489,8 @@ flags = [
         "code": "SY",
         "emoji": "🇸🇾",
         "unicode": "U+1F1F8 U+1F1FE",
-        "name": "Syrian Arab Republic",
-        "title": "flag for Syrian Arab Republic"
+        "name": "Syria",
+        "title": "flag for Syria"
     },
     {
         "code": "SZ",
@@ -1692,8 +1692,8 @@ flags = [
         "code": "VN",
         "emoji": "🇻🇳",
         "unicode": "U+1F1FB U+1F1F3",
-        "name": "Viet Nam",
-        "title": "flag for Viet Nam"
+        "name": "Vietnam",
+        "title": "flag for Vietnam"
     },
     {
         "code": "VU",
