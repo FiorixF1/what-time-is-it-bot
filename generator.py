@@ -167,6 +167,7 @@ add_alias("ME", "Montenigga")
 add_alias("MM", "Burma")
 add_alias("MO", "Macau")
 add_alias("NL", "Holland")
+add_alias("NZ", "Kiwi")
 add_alias("SZ", "Eswatini")
 add_alias("TL", "Timor East")
 add_alias("TL", "Timor Est")
@@ -211,8 +212,11 @@ dictionary["US-TX"] = Country("US-TX", "🇺🇸󠁧󠁢󠁷󠁬󠁳󠁿", "Texa
 
 dictionary["CN-BJ"] = Country("CN-BJ", "🇨🇳󠁧󠁢󠁷󠁬󠁳󠁿", "China",           list(), [("Asia/Shanghai", "Beijing")])
 dictionary["CN-XJ"] = Country("CN-XJ", "🇨🇳󠁧󠁢󠁷󠁬󠁳󠁿", "Xinjiang",        list(), [("Asia/Urumqi", "Ürümqi")])
+dictionary["CN-XZ"] = Country("CN-XZ", "🇨🇳󠁧󠁢󠁷󠁬󠁳󠁿", "Tibet",           list(), [("Asia/Urumqi", "Lhasa")])
 
 dictionary["IN-DL"] = Country("IN-DL", "🇮🇳", "India",           list(), [("Asia/Kolkata", "New Delhi")])
+
+dictionary["TZ-15"] = Country("TZ-15", "🇹🇿󠁧󠁢󠁷󠁬󠁳󠁿", "Tanzania",        list(), [("Africa/Dar_es_Salaam", "Zanzibar")])
 
 dictionary["UTC"]   = Country("UTC",   "🌍", "World",           ["Earth", "Gea", "Terra"], [("UTC", "UTC")])
 
