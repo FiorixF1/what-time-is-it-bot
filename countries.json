@@ -1,0 +1,3748 @@
+{
+  "AD": {
+    "code": "AD",
+    "emoji": "\ud83c\udde6\ud83c\udde9",
+    "name": "Andorra",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Andorra",
+        "Andorra"
+      ]
+    ]
+  },
+  "AE": {
+    "code": "AE",
+    "emoji": "\ud83c\udde6\ud83c\uddea",
+    "name": "United Arab Emirates",
+    "aliases": [
+      "UAE"
+    ],
+    "timezones": [
+      [
+        "Asia/Dubai",
+        "Dubai"
+      ]
+    ]
+  },
+  "AF": {
+    "code": "AF",
+    "emoji": "\ud83c\udde6\ud83c\uddeb",
+    "name": "Afghanistan",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Kabul",
+        "Kabul"
+      ]
+    ]
+  },
+  "AG": {
+    "code": "AG",
+    "emoji": "\ud83c\udde6\ud83c\uddec",
+    "name": "Antigua and Barbuda",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Antigua",
+        "Antigua"
+      ]
+    ]
+  },
+  "AI": {
+    "code": "AI",
+    "emoji": "\ud83c\udde6\ud83c\uddee",
+    "name": "Anguilla",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Anguilla",
+        "Anguilla"
+      ]
+    ]
+  },
+  "AL": {
+    "code": "AL",
+    "emoji": "\ud83c\udde6\ud83c\uddf1",
+    "name": "Albania",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Tirane",
+        "Tirane"
+      ]
+    ]
+  },
+  "AM": {
+    "code": "AM",
+    "emoji": "\ud83c\udde6\ud83c\uddf2",
+    "name": "Armenia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Yerevan",
+        "Yerevan"
+      ]
+    ]
+  },
+  "AO": {
+    "code": "AO",
+    "emoji": "\ud83c\udde6\ud83c\uddf4",
+    "name": "Angola",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Luanda",
+        "Luanda"
+      ]
+    ]
+  },
+  "AQ": {
+    "code": "AQ",
+    "emoji": "\ud83c\udde6\ud83c\uddf6",
+    "name": "Antarctica",
+    "aliases": [],
+    "timezones": [
+      [
+        "Antarctica/McMurdo",
+        "McMurdo"
+      ],
+      [
+        "Antarctica/Casey",
+        "Casey"
+      ],
+      [
+        "Antarctica/Davis",
+        "Davis"
+      ],
+      [
+        "Antarctica/DumontDUrville",
+        "DumontDUrville"
+      ],
+      [
+        "Antarctica/Mawson",
+        "Mawson"
+      ],
+      [
+        "Antarctica/Palmer",
+        "Palmer"
+      ],
+      [
+        "Antarctica/Rothera",
+        "Rothera"
+      ],
+      [
+        "Antarctica/Syowa",
+        "Syowa"
+      ],
+      [
+        "Antarctica/Troll",
+        "Troll"
+      ],
+      [
+        "Antarctica/Vostok",
+        "Vostok"
+      ]
+    ]
+  },
+  "AR": {
+    "code": "AR",
+    "emoji": "\ud83c\udde6\ud83c\uddf7",
+    "name": "Argentina",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Argentina/Buenos_Aires",
+        "Buenos Aires"
+      ]
+    ]
+  },
+  "AS": {
+    "code": "AS",
+    "emoji": "\ud83c\udde6\ud83c\uddf8",
+    "name": "American Samoa",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Pago_Pago",
+        "Pago Pago"
+      ]
+    ]
+  },
+  "AT": {
+    "code": "AT",
+    "emoji": "\ud83c\udde6\ud83c\uddf9",
+    "name": "Austria",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Vienna",
+        "Vienna"
+      ]
+    ]
+  },
+  "AU": {
+    "code": "AU",
+    "emoji": "\ud83c\udde6\ud83c\uddfa",
+    "name": "Australia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Australia/Lord_Howe",
+        "Lord Howe"
+      ],
+      [
+        "Antarctica/Macquarie",
+        "Macquarie"
+      ],
+      [
+        "Australia/Melbourne",
+        "Melbourne"
+      ],
+      [
+        "Australia/Sydney",
+        "Sydney"
+      ],
+      [
+        "Australia/Brisbane",
+        "Brisbane"
+      ],
+      [
+        "Australia/Adelaide",
+        "Adelaide"
+      ],
+      [
+        "Australia/Darwin",
+        "Darwin"
+      ],
+      [
+        "Australia/Perth",
+        "Perth"
+      ],
+      [
+        "Australia/Eucla",
+        "Eucla"
+      ]
+    ]
+  },
+  "AW": {
+    "code": "AW",
+    "emoji": "\ud83c\udde6\ud83c\uddfc",
+    "name": "Aruba",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Aruba",
+        "Aruba"
+      ]
+    ]
+  },
+  "AX": {
+    "code": "AX",
+    "emoji": "\ud83c\udde6\ud83c\uddfd",
+    "name": "\u00c5land Islands",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Mariehamn",
+        "Mariehamn"
+      ]
+    ]
+  },
+  "AZ": {
+    "code": "AZ",
+    "emoji": "\ud83c\udde6\ud83c\uddff",
+    "name": "Azerbaijan",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Baku",
+        "Baku"
+      ]
+    ]
+  },
+  "BA": {
+    "code": "BA",
+    "emoji": "\ud83c\udde7\ud83c\udde6",
+    "name": "Bosnia and Herzegovina",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Sarajevo",
+        "Sarajevo"
+      ]
+    ]
+  },
+  "BB": {
+    "code": "BB",
+    "emoji": "\ud83c\udde7\ud83c\udde7",
+    "name": "Barbados",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Barbados",
+        "Barbados"
+      ]
+    ]
+  },
+  "BD": {
+    "code": "BD",
+    "emoji": "\ud83c\udde7\ud83c\udde9",
+    "name": "Bangladesh",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Dhaka",
+        "Dhaka"
+      ]
+    ]
+  },
+  "BE": {
+    "code": "BE",
+    "emoji": "\ud83c\udde7\ud83c\uddea",
+    "name": "Belgium",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Brussels",
+        "Brussels"
+      ]
+    ]
+  },
+  "BF": {
+    "code": "BF",
+    "emoji": "\ud83c\udde7\ud83c\uddeb",
+    "name": "Burkina Faso",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Ouagadougou",
+        "Ouagadougou"
+      ]
+    ]
+  },
+  "BG": {
+    "code": "BG",
+    "emoji": "\ud83c\udde7\ud83c\uddec",
+    "name": "Bulgaria",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Sofia",
+        "Sofia"
+      ]
+    ]
+  },
+  "BH": {
+    "code": "BH",
+    "emoji": "\ud83c\udde7\ud83c\udded",
+    "name": "Bahrain",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Bahrain",
+        "Bahrain"
+      ]
+    ]
+  },
+  "BI": {
+    "code": "BI",
+    "emoji": "\ud83c\udde7\ud83c\uddee",
+    "name": "Burundi",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Bujumbura",
+        "Bujumbura"
+      ]
+    ]
+  },
+  "BJ": {
+    "code": "BJ",
+    "emoji": "\ud83c\udde7\ud83c\uddef",
+    "name": "Benin",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Porto-Novo",
+        "Porto-Novo"
+      ]
+    ]
+  },
+  "BL": {
+    "code": "BL",
+    "emoji": "\ud83c\udde7\ud83c\uddf1",
+    "name": "Saint Barth\u00e9lemy",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/St_Barthelemy",
+        "St Barthelemy"
+      ]
+    ]
+  },
+  "BM": {
+    "code": "BM",
+    "emoji": "\ud83c\udde7\ud83c\uddf2",
+    "name": "Bermuda",
+    "aliases": [],
+    "timezones": [
+      [
+        "Atlantic/Bermuda",
+        "Bermuda"
+      ]
+    ]
+  },
+  "BN": {
+    "code": "BN",
+    "emoji": "\ud83c\udde7\ud83c\uddf3",
+    "name": "Brunei Darussalam",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Brunei",
+        "Brunei"
+      ]
+    ]
+  },
+  "BO": {
+    "code": "BO",
+    "emoji": "\ud83c\udde7\ud83c\uddf4",
+    "name": "Bolivia",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/La_Paz",
+        "La Paz"
+      ]
+    ]
+  },
+  "BQ": {
+    "code": "BQ",
+    "emoji": "\ud83c\udde7\ud83c\uddf6",
+    "name": "Bonaire, Sint Eustatius and Saba",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Kralendijk",
+        "Kralendijk"
+      ]
+    ]
+  },
+  "BR": {
+    "code": "BR",
+    "emoji": "\ud83c\udde7\ud83c\uddf7",
+    "name": "Brazil",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Noronha",
+        "Noronha"
+      ],
+      [
+        "America/Belem",
+        "Belem"
+      ],
+      [
+        "America/Fortaleza",
+        "Fortaleza"
+      ],
+      [
+        "America/Recife",
+        "Recife"
+      ],
+      [
+        "America/Sao_Paulo",
+        "Sao Paulo"
+      ],
+      [
+        "America/Cuiaba",
+        "Cuiaba"
+      ],
+      [
+        "America/Manaus",
+        "Manaus"
+      ],
+      [
+        "America/Rio_Branco",
+        "Rio Branco"
+      ]
+    ]
+  },
+  "BS": {
+    "code": "BS",
+    "emoji": "\ud83c\udde7\ud83c\uddf8",
+    "name": "Bahamas",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Nassau",
+        "Nassau"
+      ]
+    ]
+  },
+  "BT": {
+    "code": "BT",
+    "emoji": "\ud83c\udde7\ud83c\uddf9",
+    "name": "Bhutan",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Thimphu",
+        "Thimphu"
+      ]
+    ]
+  },
+  "BV": {
+    "code": "BV",
+    "emoji": "\ud83c\udde7\ud83c\uddfb",
+    "name": "Bouvet Island",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Oslo",
+        "Bouvet"
+      ]
+    ]
+  },
+  "BW": {
+    "code": "BW",
+    "emoji": "\ud83c\udde7\ud83c\uddfc",
+    "name": "Botswana",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Gaborone",
+        "Gaborone"
+      ]
+    ]
+  },
+  "BY": {
+    "code": "BY",
+    "emoji": "\ud83c\udde7\ud83c\uddfe",
+    "name": "Belarus",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Minsk",
+        "Minsk"
+      ]
+    ]
+  },
+  "BZ": {
+    "code": "BZ",
+    "emoji": "\ud83c\udde7\ud83c\uddff",
+    "name": "Belize",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Belize",
+        "Belize"
+      ]
+    ]
+  },
+  "CA": {
+    "code": "CA",
+    "emoji": "\ud83c\udde8\ud83c\udde6",
+    "name": "Canada",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/St_Johns",
+        "St Johns"
+      ],
+      [
+        "America/Halifax",
+        "Halifax"
+      ],
+      [
+        "America/Toronto",
+        "Toronto"
+      ],
+      [
+        "America/Winnipeg",
+        "Winnipeg"
+      ],
+      [
+        "America/Regina",
+        "Regina"
+      ],
+      [
+        "America/Edmonton",
+        "Edmonton"
+      ],
+      [
+        "America/Vancouver",
+        "Vancouver"
+      ]
+    ]
+  },
+  "CC": {
+    "code": "CC",
+    "emoji": "\ud83c\udde8\ud83c\udde8",
+    "name": "Cocos (Keeling) Islands",
+    "aliases": [],
+    "timezones": [
+      [
+        "Indian/Cocos",
+        "Cocos"
+      ]
+    ]
+  },
+  "CD": {
+    "code": "CD",
+    "emoji": "\ud83c\udde8\ud83c\udde9",
+    "name": "Democratic Congo",
+    "aliases": [
+      "Big Congo"
+    ],
+    "timezones": [
+      [
+        "Africa/Kinshasa",
+        "Kinshasa"
+      ],
+      [
+        "Africa/Lubumbashi",
+        "Lubumbashi"
+      ]
+    ]
+  },
+  "CF": {
+    "code": "CF",
+    "emoji": "\ud83c\udde8\ud83c\uddeb",
+    "name": "Central African Republic",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Bangui",
+        "Bangui"
+      ]
+    ]
+  },
+  "CG": {
+    "code": "CG",
+    "emoji": "\ud83c\udde8\ud83c\uddec",
+    "name": "Congo",
+    "aliases": [
+      "Small Congo"
+    ],
+    "timezones": [
+      [
+        "Africa/Brazzaville",
+        "Brazzaville"
+      ]
+    ]
+  },
+  "CH": {
+    "code": "CH",
+    "emoji": "\ud83c\udde8\ud83c\udded",
+    "name": "Switzerland",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Zurich",
+        "Zurich"
+      ]
+    ]
+  },
+  "CI": {
+    "code": "CI",
+    "emoji": "\ud83c\udde8\ud83c\uddee",
+    "name": "C\u00f4te D'Ivoire",
+    "aliases": [
+      "Ivory Coast"
+    ],
+    "timezones": [
+      [
+        "Africa/Abidjan",
+        "Abidjan"
+      ]
+    ]
+  },
+  "CK": {
+    "code": "CK",
+    "emoji": "\ud83c\udde8\ud83c\uddf0",
+    "name": "Cook Islands",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Rarotonga",
+        "Rarotonga"
+      ]
+    ]
+  },
+  "CL": {
+    "code": "CL",
+    "emoji": "\ud83c\udde8\ud83c\uddf1",
+    "name": "Chile",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Santiago",
+        "Santiago"
+      ],
+      [
+        "America/Punta_Arenas",
+        "Punta Arenas"
+      ],
+      [
+        "Pacific/Easter",
+        "Easter"
+      ]
+    ]
+  },
+  "CM": {
+    "code": "CM",
+    "emoji": "\ud83c\udde8\ud83c\uddf2",
+    "name": "Cameroon",
+    "aliases": [
+      "Camerun"
+    ],
+    "timezones": [
+      [
+        "Africa/Douala",
+        "Douala"
+      ]
+    ]
+  },
+  "CN": {
+    "code": "CN",
+    "emoji": "\ud83c\udde8\ud83c\uddf3",
+    "name": "China",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Shanghai",
+        "Shanghai"
+      ]
+    ]
+  },
+  "CO": {
+    "code": "CO",
+    "emoji": "\ud83c\udde8\ud83c\uddf4",
+    "name": "Colombia",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Bogota",
+        "Bogota"
+      ]
+    ]
+  },
+  "CR": {
+    "code": "CR",
+    "emoji": "\ud83c\udde8\ud83c\uddf7",
+    "name": "Costa Rica",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Costa_Rica",
+        "Costa Rica"
+      ]
+    ]
+  },
+  "CU": {
+    "code": "CU",
+    "emoji": "\ud83c\udde8\ud83c\uddfa",
+    "name": "Cuba",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Havana",
+        "Havana"
+      ]
+    ]
+  },
+  "CV": {
+    "code": "CV",
+    "emoji": "\ud83c\udde8\ud83c\uddfb",
+    "name": "Cape Verde",
+    "aliases": [],
+    "timezones": [
+      [
+        "Atlantic/Cape_Verde",
+        "Cape Verde"
+      ]
+    ]
+  },
+  "CW": {
+    "code": "CW",
+    "emoji": "\ud83c\udde8\ud83c\uddfc",
+    "name": "Cura\u00e7ao",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Curacao",
+        "Curacao"
+      ]
+    ]
+  },
+  "CX": {
+    "code": "CX",
+    "emoji": "\ud83c\udde8\ud83c\uddfd",
+    "name": "Christmas Island",
+    "aliases": [],
+    "timezones": [
+      [
+        "Indian/Christmas",
+        "Christmas"
+      ]
+    ]
+  },
+  "CY": {
+    "code": "CY",
+    "emoji": "\ud83c\udde8\ud83c\uddfe",
+    "name": "Cyprus",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Nicosia",
+        "Nicosia"
+      ],
+      [
+        "Asia/Famagusta",
+        "Famagusta"
+      ]
+    ]
+  },
+  "CZ": {
+    "code": "CZ",
+    "emoji": "\ud83c\udde8\ud83c\uddff",
+    "name": "Czech Republic",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Prague",
+        "Prague"
+      ]
+    ]
+  },
+  "DE": {
+    "code": "DE",
+    "emoji": "\ud83c\udde9\ud83c\uddea",
+    "name": "Germany",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Berlin",
+        "Berlin"
+      ]
+    ]
+  },
+  "DJ": {
+    "code": "DJ",
+    "emoji": "\ud83c\udde9\ud83c\uddef",
+    "name": "Djibouti",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Djibouti",
+        "Djibouti"
+      ]
+    ]
+  },
+  "DK": {
+    "code": "DK",
+    "emoji": "\ud83c\udde9\ud83c\uddf0",
+    "name": "Denmark",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Copenhagen",
+        "Copenhagen"
+      ]
+    ]
+  },
+  "DM": {
+    "code": "DM",
+    "emoji": "\ud83c\udde9\ud83c\uddf2",
+    "name": "Dominica",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Dominica",
+        "Dominica"
+      ]
+    ]
+  },
+  "DO": {
+    "code": "DO",
+    "emoji": "\ud83c\udde9\ud83c\uddf4",
+    "name": "Dominican Republic",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Santo_Domingo",
+        "Santo Domingo"
+      ]
+    ]
+  },
+  "DZ": {
+    "code": "DZ",
+    "emoji": "\ud83c\udde9\ud83c\uddff",
+    "name": "Algeria",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Algiers",
+        "Algiers"
+      ]
+    ]
+  },
+  "EC": {
+    "code": "EC",
+    "emoji": "\ud83c\uddea\ud83c\udde8",
+    "name": "Ecuador",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Guayaquil",
+        "Guayaquil"
+      ],
+      [
+        "Pacific/Galapagos",
+        "Galapagos"
+      ]
+    ]
+  },
+  "EE": {
+    "code": "EE",
+    "emoji": "\ud83c\uddea\ud83c\uddea",
+    "name": "Estonia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Tallinn",
+        "Tallinn"
+      ]
+    ]
+  },
+  "EG": {
+    "code": "EG",
+    "emoji": "\ud83c\uddea\ud83c\uddec",
+    "name": "Egypt",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Cairo",
+        "Cairo"
+      ]
+    ]
+  },
+  "EH": {
+    "code": "EH",
+    "emoji": "\ud83c\uddea\ud83c\udded",
+    "name": "Western Sahara",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/El_Aaiun",
+        "El Aaiun"
+      ]
+    ]
+  },
+  "ER": {
+    "code": "ER",
+    "emoji": "\ud83c\uddea\ud83c\uddf7",
+    "name": "Eritrea",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Asmara",
+        "Asmara"
+      ]
+    ]
+  },
+  "ES": {
+    "code": "ES",
+    "emoji": "\ud83c\uddea\ud83c\uddf8",
+    "name": "Spain",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Madrid",
+        "Madrid"
+      ],
+      [
+        "Africa/Ceuta",
+        "Ceuta"
+      ],
+      [
+        "Atlantic/Canary",
+        "Canary"
+      ]
+    ]
+  },
+  "ET": {
+    "code": "ET",
+    "emoji": "\ud83c\uddea\ud83c\uddf9",
+    "name": "Ethiopia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Addis_Ababa",
+        "Addis Ababa"
+      ]
+    ]
+  },
+  "EU": {
+    "code": "EU",
+    "emoji": "\ud83c\uddea\ud83c\uddfa",
+    "name": "European Union",
+    "aliases": [],
+    "timezones": []
+  },
+  "FI": {
+    "code": "FI",
+    "emoji": "\ud83c\uddeb\ud83c\uddee",
+    "name": "Finland",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Helsinki",
+        "Helsinki"
+      ]
+    ]
+  },
+  "FJ": {
+    "code": "FJ",
+    "emoji": "\ud83c\uddeb\ud83c\uddef",
+    "name": "Fiji",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Fiji",
+        "Fiji"
+      ]
+    ]
+  },
+  "FK": {
+    "code": "FK",
+    "emoji": "\ud83c\uddeb\ud83c\uddf0",
+    "name": "Falkland Islands (Malvinas)",
+    "aliases": [],
+    "timezones": [
+      [
+        "Atlantic/Stanley",
+        "Stanley"
+      ]
+    ]
+  },
+  "FM": {
+    "code": "FM",
+    "emoji": "\ud83c\uddeb\ud83c\uddf2",
+    "name": "Micronesia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Chuuk",
+        "Chuuk"
+      ],
+      [
+        "Pacific/Pohnpei",
+        "Pohnpei"
+      ],
+      [
+        "Pacific/Kosrae",
+        "Kosrae"
+      ]
+    ]
+  },
+  "FO": {
+    "code": "FO",
+    "emoji": "\ud83c\uddeb\ud83c\uddf4",
+    "name": "Faroe Islands",
+    "aliases": [],
+    "timezones": [
+      [
+        "Atlantic/Faroe",
+        "Faroe"
+      ]
+    ]
+  },
+  "FR": {
+    "code": "FR",
+    "emoji": "\ud83c\uddeb\ud83c\uddf7",
+    "name": "France",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Paris",
+        "Paris"
+      ]
+    ]
+  },
+  "GA": {
+    "code": "GA",
+    "emoji": "\ud83c\uddec\ud83c\udde6",
+    "name": "Gabon",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Libreville",
+        "Libreville"
+      ]
+    ]
+  },
+  "GB": {
+    "code": "GB",
+    "emoji": "\ud83c\uddec\ud83c\udde7",
+    "name": "United Kingdom",
+    "aliases": [
+      "Great Britain",
+      "UK"
+    ],
+    "timezones": [
+      [
+        "Europe/London",
+        "London"
+      ]
+    ]
+  },
+  "GD": {
+    "code": "GD",
+    "emoji": "\ud83c\uddec\ud83c\udde9",
+    "name": "Grenada",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Grenada",
+        "Grenada"
+      ]
+    ]
+  },
+  "GE": {
+    "code": "GE",
+    "emoji": "\ud83c\uddec\ud83c\uddea",
+    "name": "Georgia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Tbilisi",
+        "Tbilisi"
+      ]
+    ]
+  },
+  "GF": {
+    "code": "GF",
+    "emoji": "\ud83c\uddec\ud83c\uddeb",
+    "name": "French Guiana",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Cayenne",
+        "Cayenne"
+      ]
+    ]
+  },
+  "GG": {
+    "code": "GG",
+    "emoji": "\ud83c\uddec\ud83c\uddec",
+    "name": "Guernsey",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Guernsey",
+        "Guernsey"
+      ]
+    ]
+  },
+  "GH": {
+    "code": "GH",
+    "emoji": "\ud83c\uddec\ud83c\udded",
+    "name": "Ghana",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Accra",
+        "Accra"
+      ]
+    ]
+  },
+  "GI": {
+    "code": "GI",
+    "emoji": "\ud83c\uddec\ud83c\uddee",
+    "name": "Gibraltar",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Gibraltar",
+        "Gibraltar"
+      ]
+    ]
+  },
+  "GL": {
+    "code": "GL",
+    "emoji": "\ud83c\uddec\ud83c\uddf1",
+    "name": "Greenland",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Nuuk",
+        "Nuuk"
+      ],
+      [
+        "America/Danmarkshavn",
+        "Danmarkshavn"
+      ],
+      [
+        "America/Scoresbysund",
+        "Scoresbysund"
+      ],
+      [
+        "America/Thule",
+        "Thule"
+      ]
+    ]
+  },
+  "GM": {
+    "code": "GM",
+    "emoji": "\ud83c\uddec\ud83c\uddf2",
+    "name": "Gambia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Banjul",
+        "Banjul"
+      ]
+    ]
+  },
+  "GN": {
+    "code": "GN",
+    "emoji": "\ud83c\uddec\ud83c\uddf3",
+    "name": "Guinea",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Conakry",
+        "Conakry"
+      ]
+    ]
+  },
+  "GP": {
+    "code": "GP",
+    "emoji": "\ud83c\uddec\ud83c\uddf5",
+    "name": "Guadeloupe",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Guadeloupe",
+        "Guadeloupe"
+      ]
+    ]
+  },
+  "GQ": {
+    "code": "GQ",
+    "emoji": "\ud83c\uddec\ud83c\uddf6",
+    "name": "Equatorial Guinea",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Malabo",
+        "Malabo"
+      ]
+    ]
+  },
+  "GR": {
+    "code": "GR",
+    "emoji": "\ud83c\uddec\ud83c\uddf7",
+    "name": "Greece",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Athens",
+        "Athens"
+      ]
+    ]
+  },
+  "GS": {
+    "code": "GS",
+    "emoji": "\ud83c\uddec\ud83c\uddf8",
+    "name": "South Georgia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Atlantic/South_Georgia",
+        "South Georgia"
+      ]
+    ]
+  },
+  "GT": {
+    "code": "GT",
+    "emoji": "\ud83c\uddec\ud83c\uddf9",
+    "name": "Guatemala",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Guatemala",
+        "Guatemala"
+      ]
+    ]
+  },
+  "GU": {
+    "code": "GU",
+    "emoji": "\ud83c\uddec\ud83c\uddfa",
+    "name": "Guam",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Guam",
+        "Guam"
+      ]
+    ]
+  },
+  "GW": {
+    "code": "GW",
+    "emoji": "\ud83c\uddec\ud83c\uddfc",
+    "name": "Guinea-Bissau",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Bissau",
+        "Bissau"
+      ]
+    ]
+  },
+  "GY": {
+    "code": "GY",
+    "emoji": "\ud83c\uddec\ud83c\uddfe",
+    "name": "Guyana",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Guyana",
+        "Guyana"
+      ]
+    ]
+  },
+  "HK": {
+    "code": "HK",
+    "emoji": "\ud83c\udded\ud83c\uddf0",
+    "name": "Hong Kong",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Hong_Kong",
+        "Hong Kong"
+      ]
+    ]
+  },
+  "HM": {
+    "code": "HM",
+    "emoji": "\ud83c\udded\ud83c\uddf2",
+    "name": "Heard Island and Mcdonald Islands",
+    "aliases": [],
+    "timezones": []
+  },
+  "HN": {
+    "code": "HN",
+    "emoji": "\ud83c\udded\ud83c\uddf3",
+    "name": "Honduras",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Tegucigalpa",
+        "Tegucigalpa"
+      ]
+    ]
+  },
+  "HR": {
+    "code": "HR",
+    "emoji": "\ud83c\udded\ud83c\uddf7",
+    "name": "Croatia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Zagreb",
+        "Zagreb"
+      ]
+    ]
+  },
+  "HT": {
+    "code": "HT",
+    "emoji": "\ud83c\udded\ud83c\uddf9",
+    "name": "Haiti",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Port-au-Prince",
+        "Port-au-Prince"
+      ]
+    ]
+  },
+  "HU": {
+    "code": "HU",
+    "emoji": "\ud83c\udded\ud83c\uddfa",
+    "name": "Hungary",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Budapest",
+        "Budapest"
+      ]
+    ]
+  },
+  "ID": {
+    "code": "ID",
+    "emoji": "\ud83c\uddee\ud83c\udde9",
+    "name": "Indonesia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Jakarta",
+        "Jakarta"
+      ],
+      [
+        "Asia/Pontianak",
+        "Pontianak"
+      ],
+      [
+        "Asia/Makassar",
+        "Makassar"
+      ],
+      [
+        "Asia/Jayapura",
+        "Jayapura"
+      ]
+    ]
+  },
+  "IE": {
+    "code": "IE",
+    "emoji": "\ud83c\uddee\ud83c\uddea",
+    "name": "Ireland",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Dublin",
+        "Dublin"
+      ]
+    ]
+  },
+  "IL": {
+    "code": "IL",
+    "emoji": "\ud83c\uddee\ud83c\uddf1",
+    "name": "Israel",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Jerusalem",
+        "Jerusalem"
+      ]
+    ]
+  },
+  "IM": {
+    "code": "IM",
+    "emoji": "\ud83c\uddee\ud83c\uddf2",
+    "name": "Isle of Man",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Isle_of_Man",
+        "Isle of Man"
+      ]
+    ]
+  },
+  "IN": {
+    "code": "IN",
+    "emoji": "\ud83c\uddee\ud83c\uddf3",
+    "name": "India",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Kolkata",
+        "Kolkata"
+      ]
+    ]
+  },
+  "IO": {
+    "code": "IO",
+    "emoji": "\ud83c\uddee\ud83c\uddf4",
+    "name": "British Indian Ocean Territory",
+    "aliases": [],
+    "timezones": [
+      [
+        "Indian/Chagos",
+        "Chagos"
+      ]
+    ]
+  },
+  "IQ": {
+    "code": "IQ",
+    "emoji": "\ud83c\uddee\ud83c\uddf6",
+    "name": "Iraq",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Baghdad",
+        "Baghdad"
+      ]
+    ]
+  },
+  "IR": {
+    "code": "IR",
+    "emoji": "\ud83c\uddee\ud83c\uddf7",
+    "name": "Iran",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Tehran",
+        "Tehran"
+      ]
+    ]
+  },
+  "IS": {
+    "code": "IS",
+    "emoji": "\ud83c\uddee\ud83c\uddf8",
+    "name": "Iceland",
+    "aliases": [],
+    "timezones": [
+      [
+        "Atlantic/Reykjavik",
+        "Reykjavik"
+      ]
+    ]
+  },
+  "IT": {
+    "code": "IT",
+    "emoji": "\ud83c\uddee\ud83c\uddf9",
+    "name": "Italy",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Rome",
+        "Rome"
+      ]
+    ]
+  },
+  "JE": {
+    "code": "JE",
+    "emoji": "\ud83c\uddef\ud83c\uddea",
+    "name": "Jersey",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Jersey",
+        "Jersey"
+      ]
+    ]
+  },
+  "JM": {
+    "code": "JM",
+    "emoji": "\ud83c\uddef\ud83c\uddf2",
+    "name": "Jamaica",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Jamaica",
+        "Jamaica"
+      ]
+    ]
+  },
+  "JO": {
+    "code": "JO",
+    "emoji": "\ud83c\uddef\ud83c\uddf4",
+    "name": "Jordan",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Amman",
+        "Amman"
+      ]
+    ]
+  },
+  "JP": {
+    "code": "JP",
+    "emoji": "\ud83c\uddef\ud83c\uddf5",
+    "name": "Japan",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Tokyo",
+        "Tokyo"
+      ]
+    ]
+  },
+  "KE": {
+    "code": "KE",
+    "emoji": "\ud83c\uddf0\ud83c\uddea",
+    "name": "Kenya",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Nairobi",
+        "Nairobi"
+      ]
+    ]
+  },
+  "KG": {
+    "code": "KG",
+    "emoji": "\ud83c\uddf0\ud83c\uddec",
+    "name": "Kyrgyzstan",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Bishkek",
+        "Bishkek"
+      ]
+    ]
+  },
+  "KH": {
+    "code": "KH",
+    "emoji": "\ud83c\uddf0\ud83c\udded",
+    "name": "Cambodia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Phnom_Penh",
+        "Phnom Penh"
+      ]
+    ]
+  },
+  "KI": {
+    "code": "KI",
+    "emoji": "\ud83c\uddf0\ud83c\uddee",
+    "name": "Kiribati",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Tarawa",
+        "Tarawa"
+      ],
+      [
+        "Pacific/Enderbury",
+        "Enderbury"
+      ],
+      [
+        "Pacific/Kiritimati",
+        "Kiritimati"
+      ]
+    ]
+  },
+  "KM": {
+    "code": "KM",
+    "emoji": "\ud83c\uddf0\ud83c\uddf2",
+    "name": "Comoros",
+    "aliases": [],
+    "timezones": [
+      [
+        "Indian/Comoro",
+        "Comoro"
+      ]
+    ]
+  },
+  "KN": {
+    "code": "KN",
+    "emoji": "\ud83c\uddf0\ud83c\uddf3",
+    "name": "Saint Kitts and Nevis",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/St_Kitts",
+        "St Kitts"
+      ]
+    ]
+  },
+  "KP": {
+    "code": "KP",
+    "emoji": "\ud83c\uddf0\ud83c\uddf5",
+    "name": "North Korea",
+    "aliases": [
+      "North Corea"
+    ],
+    "timezones": [
+      [
+        "Asia/Pyongyang",
+        "Pyongyang"
+      ]
+    ]
+  },
+  "KR": {
+    "code": "KR",
+    "emoji": "\ud83c\uddf0\ud83c\uddf7",
+    "name": "South Korea",
+    "aliases": [
+      "Corea",
+      "Korea",
+      "South Corea"
+    ],
+    "timezones": [
+      [
+        "Asia/Seoul",
+        "Seoul"
+      ]
+    ]
+  },
+  "KW": {
+    "code": "KW",
+    "emoji": "\ud83c\uddf0\ud83c\uddfc",
+    "name": "Kuwait",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Kuwait",
+        "Kuwait"
+      ]
+    ]
+  },
+  "KY": {
+    "code": "KY",
+    "emoji": "\ud83c\uddf0\ud83c\uddfe",
+    "name": "Cayman Islands",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Cayman",
+        "Cayman"
+      ]
+    ]
+  },
+  "KZ": {
+    "code": "KZ",
+    "emoji": "\ud83c\uddf0\ud83c\uddff",
+    "name": "Kazakhstan",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Almaty",
+        "Almaty"
+      ],
+      [
+        "Asia/Qyzylorda",
+        "Qyzylorda"
+      ],
+      [
+        "Asia/Qostanay",
+        "Qostanay"
+      ],
+      [
+        "Asia/Aqtobe",
+        "Aqtobe"
+      ],
+      [
+        "Asia/Aqtau",
+        "Aqtau"
+      ],
+      [
+        "Asia/Atyrau",
+        "Atyrau"
+      ],
+      [
+        "Asia/Oral",
+        "Oral"
+      ]
+    ]
+  },
+  "LA": {
+    "code": "LA",
+    "emoji": "\ud83c\uddf1\ud83c\udde6",
+    "name": "Laos",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Vientiane",
+        "Vientiane"
+      ]
+    ]
+  },
+  "LB": {
+    "code": "LB",
+    "emoji": "\ud83c\uddf1\ud83c\udde7",
+    "name": "Lebanon",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Beirut",
+        "Beirut"
+      ]
+    ]
+  },
+  "LC": {
+    "code": "LC",
+    "emoji": "\ud83c\uddf1\ud83c\udde8",
+    "name": "Saint Lucia",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/St_Lucia",
+        "St Lucia"
+      ]
+    ]
+  },
+  "LI": {
+    "code": "LI",
+    "emoji": "\ud83c\uddf1\ud83c\uddee",
+    "name": "Liechtenstein",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Vaduz",
+        "Vaduz"
+      ]
+    ]
+  },
+  "LK": {
+    "code": "LK",
+    "emoji": "\ud83c\uddf1\ud83c\uddf0",
+    "name": "Sri Lanka",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Colombo",
+        "Colombo"
+      ]
+    ]
+  },
+  "LR": {
+    "code": "LR",
+    "emoji": "\ud83c\uddf1\ud83c\uddf7",
+    "name": "Liberia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Monrovia",
+        "Monrovia"
+      ]
+    ]
+  },
+  "LS": {
+    "code": "LS",
+    "emoji": "\ud83c\uddf1\ud83c\uddf8",
+    "name": "Lesotho",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Maseru",
+        "Maseru"
+      ]
+    ]
+  },
+  "LT": {
+    "code": "LT",
+    "emoji": "\ud83c\uddf1\ud83c\uddf9",
+    "name": "Lithuania",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Vilnius",
+        "Vilnius"
+      ]
+    ]
+  },
+  "LU": {
+    "code": "LU",
+    "emoji": "\ud83c\uddf1\ud83c\uddfa",
+    "name": "Luxembourg",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Luxembourg",
+        "Luxembourg"
+      ]
+    ]
+  },
+  "LV": {
+    "code": "LV",
+    "emoji": "\ud83c\uddf1\ud83c\uddfb",
+    "name": "Latvia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Riga",
+        "Riga"
+      ]
+    ]
+  },
+  "LY": {
+    "code": "LY",
+    "emoji": "\ud83c\uddf1\ud83c\uddfe",
+    "name": "Libya",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Tripoli",
+        "Tripoli"
+      ]
+    ]
+  },
+  "MA": {
+    "code": "MA",
+    "emoji": "\ud83c\uddf2\ud83c\udde6",
+    "name": "Morocco",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Casablanca",
+        "Casablanca"
+      ]
+    ]
+  },
+  "MC": {
+    "code": "MC",
+    "emoji": "\ud83c\uddf2\ud83c\udde8",
+    "name": "Monaco",
+    "aliases": [
+      "Montecarlo"
+    ],
+    "timezones": [
+      [
+        "Europe/Monaco",
+        "Monaco"
+      ]
+    ]
+  },
+  "MD": {
+    "code": "MD",
+    "emoji": "\ud83c\uddf2\ud83c\udde9",
+    "name": "Moldova",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Chisinau",
+        "Chisinau"
+      ]
+    ]
+  },
+  "ME": {
+    "code": "ME",
+    "emoji": "\ud83c\uddf2\ud83c\uddea",
+    "name": "Montenegro",
+    "aliases": [
+      "Montenigga"
+    ],
+    "timezones": [
+      [
+        "Europe/Podgorica",
+        "Podgorica"
+      ]
+    ]
+  },
+  "MF": {
+    "code": "MF",
+    "emoji": "\ud83c\uddf2\ud83c\uddeb",
+    "name": "Saint Martin (French Part)",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Marigot",
+        "Marigot"
+      ]
+    ]
+  },
+  "MG": {
+    "code": "MG",
+    "emoji": "\ud83c\uddf2\ud83c\uddec",
+    "name": "Madagascar",
+    "aliases": [],
+    "timezones": [
+      [
+        "Indian/Antananarivo",
+        "Antananarivo"
+      ]
+    ]
+  },
+  "MH": {
+    "code": "MH",
+    "emoji": "\ud83c\uddf2\ud83c\udded",
+    "name": "Marshall Islands",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Majuro",
+        "Majuro"
+      ],
+      [
+        "Pacific/Kwajalein",
+        "Kwajalein"
+      ]
+    ]
+  },
+  "MK": {
+    "code": "MK",
+    "emoji": "\ud83c\uddf2\ud83c\uddf0",
+    "name": "North Macedonia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Skopje",
+        "Skopje"
+      ]
+    ]
+  },
+  "ML": {
+    "code": "ML",
+    "emoji": "\ud83c\uddf2\ud83c\uddf1",
+    "name": "Mali",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Bamako",
+        "Bamako"
+      ]
+    ]
+  },
+  "MM": {
+    "code": "MM",
+    "emoji": "\ud83c\uddf2\ud83c\uddf2",
+    "name": "Myanmar",
+    "aliases": [
+      "Burma"
+    ],
+    "timezones": [
+      [
+        "Asia/Yangon",
+        "Yangon"
+      ]
+    ]
+  },
+  "MN": {
+    "code": "MN",
+    "emoji": "\ud83c\uddf2\ud83c\uddf3",
+    "name": "Mongolia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Ulaanbaatar",
+        "Ulaanbaatar"
+      ],
+      [
+        "Asia/Hovd",
+        "Hovd"
+      ],
+      [
+        "Asia/Choibalsan",
+        "Choibalsan"
+      ]
+    ]
+  },
+  "MO": {
+    "code": "MO",
+    "emoji": "\ud83c\uddf2\ud83c\uddf4",
+    "name": "Macao",
+    "aliases": [
+      "Macau"
+    ],
+    "timezones": [
+      [
+        "Asia/Macau",
+        "Macau"
+      ]
+    ]
+  },
+  "MP": {
+    "code": "MP",
+    "emoji": "\ud83c\uddf2\ud83c\uddf5",
+    "name": "Northern Mariana Islands",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Saipan",
+        "Saipan"
+      ]
+    ]
+  },
+  "MQ": {
+    "code": "MQ",
+    "emoji": "\ud83c\uddf2\ud83c\uddf6",
+    "name": "Martinique",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Martinique",
+        "Martinique"
+      ]
+    ]
+  },
+  "MR": {
+    "code": "MR",
+    "emoji": "\ud83c\uddf2\ud83c\uddf7",
+    "name": "Mauritania",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Nouakchott",
+        "Nouakchott"
+      ]
+    ]
+  },
+  "MS": {
+    "code": "MS",
+    "emoji": "\ud83c\uddf2\ud83c\uddf8",
+    "name": "Montserrat",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Montserrat",
+        "Montserrat"
+      ]
+    ]
+  },
+  "MT": {
+    "code": "MT",
+    "emoji": "\ud83c\uddf2\ud83c\uddf9",
+    "name": "Malta",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Malta",
+        "Malta"
+      ]
+    ]
+  },
+  "MU": {
+    "code": "MU",
+    "emoji": "\ud83c\uddf2\ud83c\uddfa",
+    "name": "Mauritius",
+    "aliases": [],
+    "timezones": [
+      [
+        "Indian/Mauritius",
+        "Mauritius"
+      ]
+    ]
+  },
+  "MV": {
+    "code": "MV",
+    "emoji": "\ud83c\uddf2\ud83c\uddfb",
+    "name": "Maldives",
+    "aliases": [],
+    "timezones": [
+      [
+        "Indian/Maldives",
+        "Maldives"
+      ]
+    ]
+  },
+  "MW": {
+    "code": "MW",
+    "emoji": "\ud83c\uddf2\ud83c\uddfc",
+    "name": "Malawi",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Blantyre",
+        "Blantyre"
+      ]
+    ]
+  },
+  "MX": {
+    "code": "MX",
+    "emoji": "\ud83c\uddf2\ud83c\uddfd",
+    "name": "Mexico",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Mexico_City",
+        "Mexico City"
+      ],
+      [
+        "America/Chihuahua",
+        "Chihuahua"
+      ],
+      [
+        "America/Tijuana",
+        "Tijuana"
+      ]
+    ]
+  },
+  "MY": {
+    "code": "MY",
+    "emoji": "\ud83c\uddf2\ud83c\uddfe",
+    "name": "Malaysia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Kuala_Lumpur",
+        "Kuala Lumpur"
+      ],
+      [
+        "Asia/Kuching",
+        "Kuching"
+      ]
+    ]
+  },
+  "MZ": {
+    "code": "MZ",
+    "emoji": "\ud83c\uddf2\ud83c\uddff",
+    "name": "Mozambique",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Maputo",
+        "Maputo"
+      ]
+    ]
+  },
+  "NA": {
+    "code": "NA",
+    "emoji": "\ud83c\uddf3\ud83c\udde6",
+    "name": "Namibia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Windhoek",
+        "Windhoek"
+      ]
+    ]
+  },
+  "NC": {
+    "code": "NC",
+    "emoji": "\ud83c\uddf3\ud83c\udde8",
+    "name": "New Caledonia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Noumea",
+        "Noumea"
+      ]
+    ]
+  },
+  "NE": {
+    "code": "NE",
+    "emoji": "\ud83c\uddf3\ud83c\uddea",
+    "name": "Niger",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Niamey",
+        "Niamey"
+      ]
+    ]
+  },
+  "NF": {
+    "code": "NF",
+    "emoji": "\ud83c\uddf3\ud83c\uddeb",
+    "name": "Norfolk Island",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Norfolk",
+        "Norfolk"
+      ]
+    ]
+  },
+  "NG": {
+    "code": "NG",
+    "emoji": "\ud83c\uddf3\ud83c\uddec",
+    "name": "Nigeria",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Lagos",
+        "Lagos"
+      ]
+    ]
+  },
+  "NI": {
+    "code": "NI",
+    "emoji": "\ud83c\uddf3\ud83c\uddee",
+    "name": "Nicaragua",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Managua",
+        "Managua"
+      ]
+    ]
+  },
+  "NL": {
+    "code": "NL",
+    "emoji": "\ud83c\uddf3\ud83c\uddf1",
+    "name": "Netherlands",
+    "aliases": [
+      "Holland"
+    ],
+    "timezones": [
+      [
+        "Europe/Amsterdam",
+        "Amsterdam"
+      ]
+    ]
+  },
+  "NO": {
+    "code": "NO",
+    "emoji": "\ud83c\uddf3\ud83c\uddf4",
+    "name": "Norway",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Oslo",
+        "Oslo"
+      ]
+    ]
+  },
+  "NP": {
+    "code": "NP",
+    "emoji": "\ud83c\uddf3\ud83c\uddf5",
+    "name": "Nepal",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Kathmandu",
+        "Kathmandu"
+      ]
+    ]
+  },
+  "NR": {
+    "code": "NR",
+    "emoji": "\ud83c\uddf3\ud83c\uddf7",
+    "name": "Nauru",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Nauru",
+        "Nauru"
+      ]
+    ]
+  },
+  "NU": {
+    "code": "NU",
+    "emoji": "\ud83c\uddf3\ud83c\uddfa",
+    "name": "Niue",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Niue",
+        "Niue"
+      ]
+    ]
+  },
+  "NZ": {
+    "code": "NZ",
+    "emoji": "\ud83c\uddf3\ud83c\uddff",
+    "name": "New Zealand",
+    "aliases": [
+      "Kiwi"
+    ],
+    "timezones": [
+      [
+        "Pacific/Auckland",
+        "Auckland"
+      ],
+      [
+        "Pacific/Chatham",
+        "Chatham"
+      ]
+    ]
+  },
+  "OM": {
+    "code": "OM",
+    "emoji": "\ud83c\uddf4\ud83c\uddf2",
+    "name": "Oman",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Muscat",
+        "Muscat"
+      ]
+    ]
+  },
+  "PA": {
+    "code": "PA",
+    "emoji": "\ud83c\uddf5\ud83c\udde6",
+    "name": "Panama",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Panama",
+        "Panama"
+      ]
+    ]
+  },
+  "PE": {
+    "code": "PE",
+    "emoji": "\ud83c\uddf5\ud83c\uddea",
+    "name": "Peru",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Lima",
+        "Lima"
+      ]
+    ]
+  },
+  "PF": {
+    "code": "PF",
+    "emoji": "\ud83c\uddf5\ud83c\uddeb",
+    "name": "French Polynesia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Tahiti",
+        "Tahiti"
+      ],
+      [
+        "Pacific/Marquesas",
+        "Marquesas"
+      ],
+      [
+        "Pacific/Gambier",
+        "Gambier"
+      ]
+    ]
+  },
+  "PG": {
+    "code": "PG",
+    "emoji": "\ud83c\uddf5\ud83c\uddec",
+    "name": "Papua New Guinea",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Port_Moresby",
+        "Port Moresby"
+      ],
+      [
+        "Pacific/Bougainville",
+        "Bougainville"
+      ]
+    ]
+  },
+  "PH": {
+    "code": "PH",
+    "emoji": "\ud83c\uddf5\ud83c\udded",
+    "name": "Philippines",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Manila",
+        "Manila"
+      ]
+    ]
+  },
+  "PK": {
+    "code": "PK",
+    "emoji": "\ud83c\uddf5\ud83c\uddf0",
+    "name": "Pakistan",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Karachi",
+        "Karachi"
+      ]
+    ]
+  },
+  "PL": {
+    "code": "PL",
+    "emoji": "\ud83c\uddf5\ud83c\uddf1",
+    "name": "Poland",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Warsaw",
+        "Warsaw"
+      ]
+    ]
+  },
+  "PM": {
+    "code": "PM",
+    "emoji": "\ud83c\uddf5\ud83c\uddf2",
+    "name": "Saint Pierre and Miquelon",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Miquelon",
+        "Miquelon"
+      ]
+    ]
+  },
+  "PN": {
+    "code": "PN",
+    "emoji": "\ud83c\uddf5\ud83c\uddf3",
+    "name": "Pitcairn",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Pitcairn",
+        "Pitcairn"
+      ]
+    ]
+  },
+  "PR": {
+    "code": "PR",
+    "emoji": "\ud83c\uddf5\ud83c\uddf7",
+    "name": "Puerto Rico",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Puerto_Rico",
+        "Puerto Rico"
+      ]
+    ]
+  },
+  "PS": {
+    "code": "PS",
+    "emoji": "\ud83c\uddf5\ud83c\uddf8",
+    "name": "Palestine",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Gaza",
+        "Gaza"
+      ],
+      [
+        "Asia/Hebron",
+        "Hebron"
+      ]
+    ]
+  },
+  "PT": {
+    "code": "PT",
+    "emoji": "\ud83c\uddf5\ud83c\uddf9",
+    "name": "Portugal",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Lisbon",
+        "Lisbon"
+      ],
+      [
+        "Atlantic/Madeira",
+        "Madeira"
+      ],
+      [
+        "Atlantic/Azores",
+        "Azores"
+      ]
+    ]
+  },
+  "PW": {
+    "code": "PW",
+    "emoji": "\ud83c\uddf5\ud83c\uddfc",
+    "name": "Palau",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Palau",
+        "Palau"
+      ]
+    ]
+  },
+  "PY": {
+    "code": "PY",
+    "emoji": "\ud83c\uddf5\ud83c\uddfe",
+    "name": "Paraguay",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Asuncion",
+        "Asuncion"
+      ]
+    ]
+  },
+  "QA": {
+    "code": "QA",
+    "emoji": "\ud83c\uddf6\ud83c\udde6",
+    "name": "Qatar",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Qatar",
+        "Qatar"
+      ]
+    ]
+  },
+  "RE": {
+    "code": "RE",
+    "emoji": "\ud83c\uddf7\ud83c\uddea",
+    "name": "R\u00e9union",
+    "aliases": [],
+    "timezones": [
+      [
+        "Indian/Reunion",
+        "Reunion"
+      ]
+    ]
+  },
+  "RO": {
+    "code": "RO",
+    "emoji": "\ud83c\uddf7\ud83c\uddf4",
+    "name": "Romania",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Bucharest",
+        "Bucharest"
+      ]
+    ]
+  },
+  "RS": {
+    "code": "RS",
+    "emoji": "\ud83c\uddf7\ud83c\uddf8",
+    "name": "Serbia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Belgrade",
+        "Belgrade"
+      ]
+    ]
+  },
+  "RU": {
+    "code": "RU",
+    "emoji": "\ud83c\uddf7\ud83c\uddfa",
+    "name": "Russia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Kaliningrad",
+        "Kaliningrad"
+      ],
+      [
+        "Europe/Moscow",
+        "Moscow"
+      ],
+      [
+        "Europe/Volgograd",
+        "Volgograd"
+      ],
+      [
+        "Europe/Saratov",
+        "Saratov"
+      ],
+      [
+        "Europe/Ulyanovsk",
+        "Ulyanovsk"
+      ],
+      [
+        "Europe/Samara",
+        "Samara"
+      ],
+      [
+        "Asia/Yekaterinburg",
+        "Yekaterinburg"
+      ],
+      [
+        "Asia/Omsk",
+        "Omsk"
+      ],
+      [
+        "Asia/Novosibirsk",
+        "Novosibirsk"
+      ],
+      [
+        "Asia/Barnaul",
+        "Barnaul"
+      ],
+      [
+        "Asia/Tomsk",
+        "Tomsk"
+      ],
+      [
+        "Asia/Novokuznetsk",
+        "Novokuznetsk"
+      ],
+      [
+        "Asia/Krasnoyarsk",
+        "Krasnoyarsk"
+      ],
+      [
+        "Asia/Irkutsk",
+        "Irkutsk"
+      ],
+      [
+        "Asia/Yakutsk",
+        "Yakutsk"
+      ],
+      [
+        "Asia/Khandyga",
+        "Khandyga"
+      ],
+      [
+        "Asia/Vladivostok",
+        "Vladivostok"
+      ],
+      [
+        "Asia/Ust-Nera",
+        "Ust-Nera"
+      ],
+      [
+        "Asia/Magadan",
+        "Magadan"
+      ],
+      [
+        "Asia/Sakhalin",
+        "Sakhalin"
+      ],
+      [
+        "Asia/Srednekolymsk",
+        "Srednekolymsk"
+      ],
+      [
+        "Asia/Kamchatka",
+        "Kamchatka"
+      ],
+      [
+        "Asia/Anadyr",
+        "Anadyr"
+      ]
+    ]
+  },
+  "RW": {
+    "code": "RW",
+    "emoji": "\ud83c\uddf7\ud83c\uddfc",
+    "name": "Rwanda",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Kigali",
+        "Kigali"
+      ]
+    ]
+  },
+  "SA": {
+    "code": "SA",
+    "emoji": "\ud83c\uddf8\ud83c\udde6",
+    "name": "Saudi Arabia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Riyadh",
+        "Riyadh"
+      ]
+    ]
+  },
+  "SB": {
+    "code": "SB",
+    "emoji": "\ud83c\uddf8\ud83c\udde7",
+    "name": "Solomon Islands",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Guadalcanal",
+        "Guadalcanal"
+      ]
+    ]
+  },
+  "SC": {
+    "code": "SC",
+    "emoji": "\ud83c\uddf8\ud83c\udde8",
+    "name": "Seychelles",
+    "aliases": [],
+    "timezones": [
+      [
+        "Indian/Mahe",
+        "Mahe"
+      ]
+    ]
+  },
+  "SD": {
+    "code": "SD",
+    "emoji": "\ud83c\uddf8\ud83c\udde9",
+    "name": "Sudan",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Khartoum",
+        "Khartoum"
+      ]
+    ]
+  },
+  "SE": {
+    "code": "SE",
+    "emoji": "\ud83c\uddf8\ud83c\uddea",
+    "name": "Sweden",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Stockholm",
+        "Stockholm"
+      ]
+    ]
+  },
+  "SG": {
+    "code": "SG",
+    "emoji": "\ud83c\uddf8\ud83c\uddec",
+    "name": "Singapore",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Singapore",
+        "Singapore"
+      ]
+    ]
+  },
+  "SH": {
+    "code": "SH",
+    "emoji": "\ud83c\uddf8\ud83c\udded",
+    "name": "Saint Helena, Ascension and Tristan Da Cunha",
+    "aliases": [],
+    "timezones": [
+      [
+        "Atlantic/St_Helena",
+        "St Helena"
+      ]
+    ]
+  },
+  "SI": {
+    "code": "SI",
+    "emoji": "\ud83c\uddf8\ud83c\uddee",
+    "name": "Slovenia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Ljubljana",
+        "Ljubljana"
+      ]
+    ]
+  },
+  "SJ": {
+    "code": "SJ",
+    "emoji": "\ud83c\uddf8\ud83c\uddef",
+    "name": "Svalbard and Jan Mayen",
+    "aliases": [],
+    "timezones": [
+      [
+        "Arctic/Longyearbyen",
+        "Longyearbyen"
+      ]
+    ]
+  },
+  "SK": {
+    "code": "SK",
+    "emoji": "\ud83c\uddf8\ud83c\uddf0",
+    "name": "Slovakia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Bratislava",
+        "Bratislava"
+      ]
+    ]
+  },
+  "SL": {
+    "code": "SL",
+    "emoji": "\ud83c\uddf8\ud83c\uddf1",
+    "name": "Sierra Leone",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Freetown",
+        "Freetown"
+      ]
+    ]
+  },
+  "SM": {
+    "code": "SM",
+    "emoji": "\ud83c\uddf8\ud83c\uddf2",
+    "name": "San Marino",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/San_Marino",
+        "San Marino"
+      ]
+    ]
+  },
+  "SN": {
+    "code": "SN",
+    "emoji": "\ud83c\uddf8\ud83c\uddf3",
+    "name": "Senegal",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Dakar",
+        "Dakar"
+      ]
+    ]
+  },
+  "SO": {
+    "code": "SO",
+    "emoji": "\ud83c\uddf8\ud83c\uddf4",
+    "name": "Somalia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Mogadishu",
+        "Mogadishu"
+      ]
+    ]
+  },
+  "SR": {
+    "code": "SR",
+    "emoji": "\ud83c\uddf8\ud83c\uddf7",
+    "name": "Suriname",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Paramaribo",
+        "Paramaribo"
+      ]
+    ]
+  },
+  "SS": {
+    "code": "SS",
+    "emoji": "\ud83c\uddf8\ud83c\uddf8",
+    "name": "South Sudan",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Juba",
+        "Juba"
+      ]
+    ]
+  },
+  "ST": {
+    "code": "ST",
+    "emoji": "\ud83c\uddf8\ud83c\uddf9",
+    "name": "Sao Tome and Principe",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Sao_Tome",
+        "Sao Tome"
+      ]
+    ]
+  },
+  "SV": {
+    "code": "SV",
+    "emoji": "\ud83c\uddf8\ud83c\uddfb",
+    "name": "El Salvador",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/El_Salvador",
+        "El Salvador"
+      ]
+    ]
+  },
+  "SX": {
+    "code": "SX",
+    "emoji": "\ud83c\uddf8\ud83c\uddfd",
+    "name": "Sint Maarten (Dutch Part)",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Lower_Princes",
+        "Lower Princes"
+      ]
+    ]
+  },
+  "SY": {
+    "code": "SY",
+    "emoji": "\ud83c\uddf8\ud83c\uddfe",
+    "name": "Syria",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Damascus",
+        "Damascus"
+      ]
+    ]
+  },
+  "SZ": {
+    "code": "SZ",
+    "emoji": "\ud83c\uddf8\ud83c\uddff",
+    "name": "Swaziland",
+    "aliases": [
+      "Eswatini"
+    ],
+    "timezones": [
+      [
+        "Africa/Mbabane",
+        "Mbabane"
+      ]
+    ]
+  },
+  "TC": {
+    "code": "TC",
+    "emoji": "\ud83c\uddf9\ud83c\udde8",
+    "name": "Turks and Caicos Islands",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Grand_Turk",
+        "Grand Turk"
+      ]
+    ]
+  },
+  "TD": {
+    "code": "TD",
+    "emoji": "\ud83c\uddf9\ud83c\udde9",
+    "name": "Chad",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Ndjamena",
+        "Ndjamena"
+      ]
+    ]
+  },
+  "TF": {
+    "code": "TF",
+    "emoji": "\ud83c\uddf9\ud83c\uddeb",
+    "name": "French Southern Territories",
+    "aliases": [],
+    "timezones": [
+      [
+        "Indian/Kerguelen",
+        "Kerguelen"
+      ]
+    ]
+  },
+  "TG": {
+    "code": "TG",
+    "emoji": "\ud83c\uddf9\ud83c\uddec",
+    "name": "Togo",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Lome",
+        "Lome"
+      ]
+    ]
+  },
+  "TH": {
+    "code": "TH",
+    "emoji": "\ud83c\uddf9\ud83c\udded",
+    "name": "Thailand",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Bangkok",
+        "Bangkok"
+      ]
+    ]
+  },
+  "TJ": {
+    "code": "TJ",
+    "emoji": "\ud83c\uddf9\ud83c\uddef",
+    "name": "Tajikistan",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Dushanbe",
+        "Dushanbe"
+      ]
+    ]
+  },
+  "TK": {
+    "code": "TK",
+    "emoji": "\ud83c\uddf9\ud83c\uddf0",
+    "name": "Tokelau",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Fakaofo",
+        "Fakaofo"
+      ]
+    ]
+  },
+  "TL": {
+    "code": "TL",
+    "emoji": "\ud83c\uddf9\ud83c\uddf1",
+    "name": "Timor-Leste",
+    "aliases": [
+      "Timor East",
+      "Timor Est"
+    ],
+    "timezones": [
+      [
+        "Asia/Dili",
+        "Dili"
+      ]
+    ]
+  },
+  "TM": {
+    "code": "TM",
+    "emoji": "\ud83c\uddf9\ud83c\uddf2",
+    "name": "Turkmenistan",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Ashgabat",
+        "Ashgabat"
+      ]
+    ]
+  },
+  "TN": {
+    "code": "TN",
+    "emoji": "\ud83c\uddf9\ud83c\uddf3",
+    "name": "Tunisia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Tunis",
+        "Tunis"
+      ]
+    ]
+  },
+  "TO": {
+    "code": "TO",
+    "emoji": "\ud83c\uddf9\ud83c\uddf4",
+    "name": "Tonga",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Tongatapu",
+        "Tongatapu"
+      ]
+    ]
+  },
+  "TR": {
+    "code": "TR",
+    "emoji": "\ud83c\uddf9\ud83c\uddf7",
+    "name": "Turkey",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Istanbul",
+        "Istanbul"
+      ]
+    ]
+  },
+  "TT": {
+    "code": "TT",
+    "emoji": "\ud83c\uddf9\ud83c\uddf9",
+    "name": "Trinidad and Tobago",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Port_of_Spain",
+        "Port of Spain"
+      ]
+    ]
+  },
+  "TV": {
+    "code": "TV",
+    "emoji": "\ud83c\uddf9\ud83c\uddfb",
+    "name": "Tuvalu",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Funafuti",
+        "Funafuti"
+      ]
+    ]
+  },
+  "TW": {
+    "code": "TW",
+    "emoji": "\ud83c\uddf9\ud83c\uddfc",
+    "name": "Taiwan",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Taipei",
+        "Taipei"
+      ]
+    ]
+  },
+  "TZ": {
+    "code": "TZ",
+    "emoji": "\ud83c\uddf9\ud83c\uddff",
+    "name": "Tanzania",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Dar_es_Salaam",
+        "Dar es Salaam"
+      ]
+    ]
+  },
+  "UA": {
+    "code": "UA",
+    "emoji": "\ud83c\uddfa\ud83c\udde6",
+    "name": "Ukraine",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Kiev",
+        "Kiev"
+      ]
+    ]
+  },
+  "UG": {
+    "code": "UG",
+    "emoji": "\ud83c\uddfa\ud83c\uddec",
+    "name": "Uganda",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Kampala",
+        "Kampala"
+      ]
+    ]
+  },
+  "UM": {
+    "code": "UM",
+    "emoji": "\ud83c\uddfa\ud83c\uddf2",
+    "name": "United States Minor Outlying Islands",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Midway",
+        "Midway"
+      ],
+      [
+        "Pacific/Wake",
+        "Wake"
+      ]
+    ]
+  },
+  "US": {
+    "code": "US",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "name": "United States",
+    "aliases": [
+      "USA"
+    ],
+    "timezones": [
+      [
+        "America/New_York",
+        "New York"
+      ],
+      [
+        "America/Detroit",
+        "Detroit"
+      ],
+      [
+        "America/Indiana/Indianapolis",
+        "Indianapolis"
+      ],
+      [
+        "America/Chicago",
+        "Chicago"
+      ],
+      [
+        "America/Denver",
+        "Denver"
+      ],
+      [
+        "America/Phoenix",
+        "Phoenix"
+      ],
+      [
+        "America/Los_Angeles",
+        "Los Angeles"
+      ],
+      [
+        "America/Anchorage",
+        "Anchorage"
+      ],
+      [
+        "Pacific/Honolulu",
+        "Honolulu"
+      ]
+    ]
+  },
+  "UY": {
+    "code": "UY",
+    "emoji": "\ud83c\uddfa\ud83c\uddfe",
+    "name": "Uruguay",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Montevideo",
+        "Montevideo"
+      ]
+    ]
+  },
+  "UZ": {
+    "code": "UZ",
+    "emoji": "\ud83c\uddfa\ud83c\uddff",
+    "name": "Uzbekistan",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Samarkand",
+        "Samarkand"
+      ],
+      [
+        "Asia/Tashkent",
+        "Tashkent"
+      ]
+    ]
+  },
+  "VA": {
+    "code": "VA",
+    "emoji": "\ud83c\uddfb\ud83c\udde6",
+    "name": "Vatican City",
+    "aliases": [
+      "Vatican"
+    ],
+    "timezones": [
+      [
+        "Europe/Vatican",
+        "Vatican"
+      ]
+    ]
+  },
+  "VC": {
+    "code": "VC",
+    "emoji": "\ud83c\uddfb\ud83c\udde8",
+    "name": "Saint Vincent and The Grenadines",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/St_Vincent",
+        "St Vincent"
+      ]
+    ]
+  },
+  "VE": {
+    "code": "VE",
+    "emoji": "\ud83c\uddfb\ud83c\uddea",
+    "name": "Venezuela",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Caracas",
+        "Caracas"
+      ]
+    ]
+  },
+  "VG": {
+    "code": "VG",
+    "emoji": "\ud83c\uddfb\ud83c\uddec",
+    "name": "Virgin Islands, British",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Tortola",
+        "Tortola"
+      ]
+    ]
+  },
+  "VI": {
+    "code": "VI",
+    "emoji": "\ud83c\uddfb\ud83c\uddee",
+    "name": "Virgin Islands, U.S.",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/St_Thomas",
+        "St Thomas"
+      ]
+    ]
+  },
+  "VN": {
+    "code": "VN",
+    "emoji": "\ud83c\uddfb\ud83c\uddf3",
+    "name": "Vietnam",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Ho_Chi_Minh",
+        "Ho Chi Minh"
+      ]
+    ]
+  },
+  "VU": {
+    "code": "VU",
+    "emoji": "\ud83c\uddfb\ud83c\uddfa",
+    "name": "Vanuatu",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Efate",
+        "Efate"
+      ]
+    ]
+  },
+  "WF": {
+    "code": "WF",
+    "emoji": "\ud83c\uddfc\ud83c\uddeb",
+    "name": "Wallis and Futuna",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Wallis",
+        "Wallis"
+      ]
+    ]
+  },
+  "WS": {
+    "code": "WS",
+    "emoji": "\ud83c\uddfc\ud83c\uddf8",
+    "name": "Samoa",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Apia",
+        "Apia"
+      ]
+    ]
+  },
+  "YE": {
+    "code": "YE",
+    "emoji": "\ud83c\uddfe\ud83c\uddea",
+    "name": "Yemen",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Aden",
+        "Aden"
+      ]
+    ]
+  },
+  "YT": {
+    "code": "YT",
+    "emoji": "\ud83c\uddfe\ud83c\uddf9",
+    "name": "Mayotte",
+    "aliases": [],
+    "timezones": [
+      [
+        "Indian/Mayotte",
+        "Mayotte"
+      ]
+    ]
+  },
+  "ZA": {
+    "code": "ZA",
+    "emoji": "\ud83c\uddff\ud83c\udde6",
+    "name": "South Africa",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Johannesburg",
+        "Johannesburg"
+      ]
+    ]
+  },
+  "ZM": {
+    "code": "ZM",
+    "emoji": "\ud83c\uddff\ud83c\uddf2",
+    "name": "Zambia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Lusaka",
+        "Lusaka"
+      ]
+    ]
+  },
+  "ZW": {
+    "code": "ZW",
+    "emoji": "\ud83c\uddff\ud83c\uddfc",
+    "name": "Zimbabwe",
+    "aliases": [],
+    "timezones": [
+      [
+        "Africa/Harare",
+        "Harare"
+      ]
+    ]
+  },
+  "XK": {
+    "code": "XK",
+    "emoji": "\ud83c\uddfd\ud83c\uddf0",
+    "name": "Kosovo",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Belgrade",
+        "Pristina"
+      ]
+    ]
+  },
+  "GB-ENG": {
+    "code": "GB-ENG",
+    "emoji": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
+    "name": "England",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/London",
+        "London"
+      ]
+    ]
+  },
+  "GB-SCT": {
+    "code": "GB-SCT",
+    "emoji": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc73\udb40\udc63\udb40\udc74\udb40\udc7f",
+    "name": "Scotland",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/London",
+        "Edimburgh"
+      ]
+    ]
+  },
+  "GB-WLS": {
+    "code": "GB-WLS",
+    "emoji": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc77\udb40\udc6c\udb40\udc73\udb40\udc7f",
+    "name": "Wales",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/London",
+        "Cardiff"
+      ]
+    ]
+  },
+  "FM-TRK": {
+    "code": "FM-TRK",
+    "emoji": "\ud83c\uddeb\ud83c\uddf2",
+    "name": "Chuuk",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Chuuk",
+        "Chuuk"
+      ]
+    ]
+  },
+  "FM-KSA": {
+    "code": "FM-KSA",
+    "emoji": "\ud83c\uddeb\ud83c\uddf2",
+    "name": "Kosrae",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Kosrae",
+        "Kosrae"
+      ]
+    ]
+  },
+  "FM-PNI": {
+    "code": "FM-PNI",
+    "emoji": "\ud83c\uddeb\ud83c\uddf2",
+    "name": "Pohnpei",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Pohnpei",
+        "Pohnpei"
+      ]
+    ]
+  },
+  "FM-YAP": {
+    "code": "FM-YAP",
+    "emoji": "\ud83c\uddeb\ud83c\uddf2",
+    "name": "Yap",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Chuuk",
+        "Yap"
+      ]
+    ]
+  },
+  "RU-CE": {
+    "code": "RU-CE",
+    "emoji": "\ud83c\uddf7\ud83c\uddfa\udb40\udc67\udb40\udc62\udb40\udc77\udb40\udc6c\udb40\udc73\udb40\udc7f",
+    "name": "Chechnya",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Moscow",
+        "Grozny"
+      ]
+    ]
+  },
+  "KGD": {
+    "code": "KGD",
+    "emoji": "\ud83c\uddf7\ud83c\uddfa\udb40\udc67\udb40\udc62\udb40\udc77\udb40\udc6c\udb40\udc73\udb40\udc7f",
+    "name": "Russia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Kaliningrad",
+        "K\u00f6nigsberg"
+      ]
+    ]
+  },
+  "UA-43": {
+    "code": "UA-43",
+    "emoji": "\ud83c\uddfa\ud83c\udde6",
+    "name": "Crimea",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Simferopol",
+        "Simferopol"
+      ]
+    ]
+  },
+  "ID-JW": {
+    "code": "ID-JW",
+    "emoji": "\ud83c\uddee\ud83c\udde9",
+    "name": "Java",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Jakarta",
+        "Jakarta"
+      ]
+    ]
+  },
+  "ID-KA": {
+    "code": "ID-KA",
+    "emoji": "\ud83c\uddee\ud83c\udde9",
+    "name": "Borneo",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Pontianak",
+        "Pontianak"
+      ]
+    ]
+  },
+  "ID-NU": {
+    "code": "ID-NU",
+    "emoji": "\ud83c\uddee\ud83c\udde9",
+    "name": "Nusa Tenggara",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Makassar",
+        "Bali"
+      ]
+    ]
+  },
+  "ID-PP": {
+    "code": "ID-PP",
+    "emoji": "\ud83c\uddee\ud83c\udde9",
+    "name": "West Papua",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Jayapura",
+        "Jayapura"
+      ]
+    ]
+  },
+  "ID-SL": {
+    "code": "ID-SL",
+    "emoji": "\ud83c\uddee\ud83c\udde9",
+    "name": "Sulawesi",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Makassar",
+        "Makassar"
+      ]
+    ]
+  },
+  "ID-SM": {
+    "code": "ID-SM",
+    "emoji": "\ud83c\uddee\ud83c\udde9",
+    "name": "Sumatra",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Jakarta",
+        "Medan"
+      ]
+    ]
+  },
+  "US-AK": {
+    "code": "US-AK",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8\udb40\udc67\udb40\udc62\udb40\udc77\udb40\udc6c\udb40\udc73\udb40\udc7f",
+    "name": "Alaska",
+    "aliases": [],
+    "timezones": [
+      [
+        "US/Alaska",
+        "Anchorage"
+      ],
+      [
+        "America/Adak",
+        "Adak"
+      ]
+    ]
+  },
+  "US-CA": {
+    "code": "US-CA",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8\udb40\udc67\udb40\udc62\udb40\udc77\udb40\udc6c\udb40\udc73\udb40\udc7f",
+    "name": "California",
+    "aliases": [],
+    "timezones": [
+      [
+        "US/Pacific",
+        "Los Angeles"
+      ]
+    ]
+  },
+  "US-HI": {
+    "code": "US-HI",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8\udb40\udc67\udb40\udc62\udb40\udc77\udb40\udc6c\udb40\udc73\udb40\udc7f",
+    "name": "Hawaii",
+    "aliases": [],
+    "timezones": [
+      [
+        "US/Hawaii",
+        "Honolulu"
+      ]
+    ]
+  },
+  "US-FL": {
+    "code": "US-FL",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8\udb40\udc67\udb40\udc62\udb40\udc77\udb40\udc6c\udb40\udc73\udb40\udc7f",
+    "name": "Florida",
+    "aliases": [],
+    "timezones": [
+      [
+        "US/Eastern",
+        "Miami"
+      ],
+      [
+        "US/Central",
+        "Pensacola"
+      ]
+    ]
+  },
+  "US-TX": {
+    "code": "US-TX",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8\udb40\udc67\udb40\udc62\udb40\udc77\udb40\udc6c\udb40\udc73\udb40\udc7f",
+    "name": "Texas",
+    "aliases": [],
+    "timezones": [
+      [
+        "US/Central",
+        "Dallas"
+      ]
+    ]
+  },
+  "CN-XJ": {
+    "code": "CN-XJ",
+    "emoji": "\ud83c\udde8\ud83c\uddf3\udb40\udc67\udb40\udc62\udb40\udc77\udb40\udc6c\udb40\udc73\udb40\udc7f",
+    "name": "Xinjiang",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Urumqi",
+        "\u00dcr\u00fcmqi"
+      ]
+    ]
+  },
+  "CN-XZ": {
+    "code": "CN-XZ",
+    "emoji": "\ud83c\udde8\ud83c\uddf3\udb40\udc67\udb40\udc62\udb40\udc77\udb40\udc6c\udb40\udc73\udb40\udc7f",
+    "name": "Tibet",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Shanghai",
+        "Lhasa"
+      ]
+    ]
+  },
+  "UTC": {
+    "code": "UTC",
+    "emoji": "\ud83c\udf0d",
+    "name": "World",
+    "aliases": [
+      "Earth",
+      "Gea",
+      "Terra"
+    ],
+    "timezones": [
+      [
+        "UTC",
+        "UTC"
+      ]
+    ]
+  },
+  "": {
+    "code": "",
+    "emoji": "\ud83c\udff3\ufe0f",
+    "name": "",
+    "aliases": [],
+    "timezones": [
+      [
+        "GMT",
+        "GMT"
+      ]
+    ]
+  }
+}

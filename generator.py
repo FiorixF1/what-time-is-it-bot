@@ -1,8 +1,24 @@
-from collections import namedtuple
 from flags import flags
 import unidecode
 import pickle
 import pytz
+import json
+
+
+
+### COUNTRIES
+
+def create_country(code, emoji, name, aliases, timezones):
+    return {
+        "code"      : code,
+        "emoji"     : emoji,
+        "name"      : name,
+        "aliases"   : aliases,
+        "timezones" : timezones
+    }
+
+def add_alias(code, alias):
+    countries[code]["aliases"] = countries[code]["aliases"] + [alias]
 
 def get_city_from_timezone(timezone):
     if '/' in timezone:
@@ -10,24 +26,11 @@ def get_city_from_timezone(timezone):
     else:
         return timezone.replace('_', ' ')
 
-def add_alias(code, alias):
-    old = dictionary[code]
-    new = Country(old.code,
-                  old.emoji,
-                  old.name,
-                  old.aliases + [alias],
-                  old.timezones)
-    dictionary[code] = new
-
-
-
-Country = namedtuple("Country", ["code", "emoji", "name", "aliases", "timezones"])
-
-dictionary = dict()
-
 
 
 # Step 1: get available data from "flags" and "pytz"
+countries = dict()
+
 for flag in flags:
     code      = flag["code"]
     emoji     = flag["emoji"]
@@ -36,8 +39,8 @@ for flag in flags:
     timezones = pytz.country_timezones.get(code, [])
     cities    = map(get_city_from_timezone, timezones)
     timezones_and_cities = list(zip(timezones, cities))
-    
-    dictionary[code] = Country(code, emoji, name, aliases, timezones_and_cities)
+
+    countries[code] = create_country(code, emoji, name, aliases, timezones_and_cities)
 
 
 
@@ -138,15 +141,8 @@ REMOVED_TIMEZONES = {
     "US/Pacific"
 }
 
-for code in dictionary:
-    old = dictionary[code]
-    new = Country(old.code,
-                  old.emoji,
-                  old.name,
-                  old.aliases,
-                  list(filter(lambda timezone: timezone[0] not in REMOVED_TIMEZONES, old.timezones
-    )))
-    dictionary[code] = new
+for code in countries:
+    countries[code]["timezones"] = list(filter(lambda timezone: timezone[0] not in REMOVED_TIMEZONES, countries[code]["timezones"]))
 
 
 
@@ -176,67 +172,102 @@ add_alias("VA", "Vatican")
 
 
 
-# Step 4: add countries and cities
-dictionary["BV"]    = Country("BV",    "🇧🇻", "Bouvet Island",   list(), [("Europe/Oslo", "Bouvet")])
+# Step 4: add countries and regions
+countries["BV"]     = create_country("BV",     "🇧🇻", "Bouvet Island",   list(), [("Europe/Oslo", "Bouvet")])
 
-dictionary["XK"]    = Country("XK",    "🇽🇰", "Kosovo",          list(), [("Europe/Tirane", "Pristina")])
+countries["XK"]     = create_country("XK",     "🇽🇰", "Kosovo",          list(), [("Europe/Belgrade", "Pristina")])
 
-dictionary["ENG"]   = Country("ENG",   "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "England",         list(), [("Europe/London", "London")])
-dictionary["SCT"]   = Country("SCT",   "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "Scotland",        list(), [("Europe/London", "Edimburgh")])
-dictionary["WLS"]   = Country("WLS",   "🏴󠁧󠁢󠁷󠁬󠁳󠁿", "Wales",           list(), [("Europe/London", "Cardiff")])
+countries["GB-ENG"] = create_country("GB-ENG", "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "England",         list(), [("Europe/London", "London")])
+countries["GB-SCT"] = create_country("GB-SCT", "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "Scotland",        list(), [("Europe/London", "Edimburgh")])
+countries["GB-WLS"] = create_country("GB-WLS", "🏴󠁧󠁢󠁷󠁬󠁳󠁿", "Wales",           list(), [("Europe/London", "Cardiff")])
 
-dictionary["TRK"]   = Country("TRK",   "🇫🇲", "Chuuk",           list(), [("Pacific/Chuuk", "Chuuk")])
-dictionary["KSA"]   = Country("KSA",   "🇫🇲", "Kosrae",          list(), [("Pacific/Kosrae", "Kosrae")])
-dictionary["PNI"]   = Country("PNI",   "🇫🇲", "Pohnpei",         list(), [("Pacific/Pohnpei", "Pohnpei")])
-dictionary["YAP"]   = Country("YAP",   "🇫🇲", "Yap",             list(), [("Pacific/Chuuk", "Yap")])
+countries["FM-TRK"] = create_country("FM-TRK",    "🇫🇲", "Chuuk",           list(), [("Pacific/Chuuk", "Chuuk")])
+countries["FM-KSA"] = create_country("FM-KSA",    "🇫🇲", "Kosrae",          list(), [("Pacific/Kosrae", "Kosrae")])
+countries["FM-PNI"] = create_country("FM-PNI",    "🇫🇲", "Pohnpei",         list(), [("Pacific/Pohnpei", "Pohnpei")])
+countries["FM-YAP"] = create_country("FM-YAP",    "🇫🇲", "Yap",             list(), [("Pacific/Chuuk", "Yap")])
 
-dictionary["RU-CE"] = Country("RU-CE", "🇷🇺󠁧󠁢󠁷󠁬󠁳󠁿", "Chechnya",        list(), [("Europe/Moscow", "Grozny")])
-dictionary["KGD"]   = Country("KGD",   "🇷🇺󠁧󠁢󠁷󠁬󠁳󠁿", "Russia",          list(), [("Europe/Kaliningrad", "Königsberg")])
+countries["RU-CE"]  = create_country("RU-CE",  "🇷🇺󠁧󠁢󠁷󠁬󠁳󠁿", "Chechnya",        list(), [("Europe/Moscow", "Grozny")])
+countries["KGD"]    = create_country("KGD",    "🇷🇺󠁧󠁢󠁷󠁬󠁳󠁿", "Russia",          list(), [("Europe/Kaliningrad", "Königsberg")])
 
-dictionary["UA-43"] = Country("UA-43", "🇺🇦", "Crimea",          list(), [("Europe/Simferopol", "Simferopol")])
-dictionary["UA-14"] = Country("UA-14", "🇺🇦", "Donetsk",         list(), [("Europe/Moscow", "Donetsk")])
-dictionary["UA-09"] = Country("UA-09", "🇺🇦", "Luhansk",         list(), [("Europe/Moscow", "Luhansk")])
+countries["UA-43"]  = create_country("UA-43",  "🇺🇦", "Crimea",          list(), [("Europe/Simferopol", "Simferopol")])
 
-dictionary["ID-JW"] = Country("ID-JW", "🇮🇩", "Java",            list(), [("Asia/Jakarta", "Jakarta")])
-dictionary["ID-KA"] = Country("ID-KA", "🇮🇩", "Borneo",          list(), [("Asia/Pontianak", "Pontianak")])
-dictionary["ID-NU"] = Country("ID-NU", "🇮🇩", "Nusa Tenggara",   list(), [("Asia/Makassar", "Bali")])
-dictionary["ID-PP"] = Country("ID-PP", "🇮🇩", "West Papua",      list(), [("Asia/Jayapura", "Jayapura")])
-dictionary["ID-SL"] = Country("ID-SL", "🇮🇩", "Sulawesi",        list(), [("Asia/Makassar", "Makassar")])
-dictionary["ID-SM"] = Country("ID-SM", "🇮🇩", "Sumatra",         list(), [("Asia/Jakarta", "Medan")])
+countries["ID-JW"]  = create_country("ID-JW",  "🇮🇩", "Java",            list(), [("Asia/Jakarta", "Jakarta")])
+countries["ID-KA"]  = create_country("ID-KA",  "🇮🇩", "Borneo",          list(), [("Asia/Pontianak", "Pontianak")])
+countries["ID-NU"]  = create_country("ID-NU",  "🇮🇩", "Nusa Tenggara",   list(), [("Asia/Makassar", "Bali")])
+countries["ID-PP"]  = create_country("ID-PP",  "🇮🇩", "West Papua",      list(), [("Asia/Jayapura", "Jayapura")])
+countries["ID-SL"]  = create_country("ID-SL",  "🇮🇩", "Sulawesi",        list(), [("Asia/Makassar", "Makassar")])
+countries["ID-SM"]  = create_country("ID-SM",  "🇮🇩", "Sumatra",         list(), [("Asia/Jakarta", "Medan")])
 
-dictionary["US-AK"] = Country("US-AK", "🇺🇸󠁧󠁢󠁷󠁬󠁳󠁿", "Alaska",          list(), [("US/Alaska", "Anchorage"), ("America/Adak", "Adak")])
-dictionary["US-CA"] = Country("US-CA", "🇺🇸󠁧󠁢󠁷󠁬󠁳󠁿", "California",      list(), [("US/Pacific", "Los Angeles")])
-dictionary["US-HI"] = Country("US-HI", "🇺🇸󠁧󠁢󠁷󠁬󠁳󠁿", "Hawaii",          list(), [("US/Hawaii", "Honolulu")])
-dictionary["US-FL"] = Country("US-FL", "🇺🇸󠁧󠁢󠁷󠁬󠁳󠁿", "Florida",         list(), [("US/Eastern", "Miami"), ("US/Central", "Pensacola")])
-dictionary["US-TX"] = Country("US-TX", "🇺🇸󠁧󠁢󠁷󠁬󠁳󠁿", "Texas",           list(), [("US/Central", "Dallas")])
+countries["US-AK"]  = create_country("US-AK",  "🇺🇸󠁧󠁢󠁷󠁬󠁳󠁿", "Alaska",          list(), [("US/Alaska", "Anchorage"), ("America/Adak", "Adak")])
+countries["US-CA"]  = create_country("US-CA",  "🇺🇸󠁧󠁢󠁷󠁬󠁳󠁿", "California",      list(), [("US/Pacific", "Los Angeles")])
+countries["US-HI"]  = create_country("US-HI",  "🇺🇸󠁧󠁢󠁷󠁬󠁳󠁿", "Hawaii",          list(), [("US/Hawaii", "Honolulu")])
+countries["US-FL"]  = create_country("US-FL",  "🇺🇸󠁧󠁢󠁷󠁬󠁳󠁿", "Florida",         list(), [("US/Eastern", "Miami"), ("US/Central", "Pensacola")])
+countries["US-TX"]  = create_country("US-TX",  "🇺🇸󠁧󠁢󠁷󠁬󠁳󠁿", "Texas",           list(), [("US/Central", "Dallas")])
 
-dictionary["CN-BJ"] = Country("CN-BJ", "🇨🇳󠁧󠁢󠁷󠁬󠁳󠁿", "China",           list(), [("Asia/Shanghai", "Beijing")])
-dictionary["CN-XJ"] = Country("CN-XJ", "🇨🇳󠁧󠁢󠁷󠁬󠁳󠁿", "Xinjiang",        list(), [("Asia/Urumqi", "Ürümqi")])
-dictionary["CN-XZ"] = Country("CN-XZ", "🇨🇳󠁧󠁢󠁷󠁬󠁳󠁿", "Tibet",           list(), [("Asia/Urumqi", "Lhasa")])
+countries["CN-XJ"]  = create_country("CN-XJ",  "🇨🇳󠁧󠁢󠁷󠁬󠁳󠁿", "Xinjiang",        list(), [("Asia/Urumqi", "Ürümqi")])
+countries["CN-XZ"]  = create_country("CN-XZ",  "🇨🇳󠁧󠁢󠁷󠁬󠁳󠁿", "Tibet",           list(), [("Asia/Shanghai", "Lhasa")])
 
-dictionary["IN-DL"] = Country("IN-DL", "🇮🇳", "India",           list(), [("Asia/Kolkata", "New Delhi")])
-
-dictionary["TZ-15"] = Country("TZ-15", "🇹🇿󠁧󠁢󠁷󠁬󠁳󠁿", "Tanzania",        list(), [("Africa/Dar_es_Salaam", "Zanzibar")])
-
-dictionary["UTC"]   = Country("UTC",   "🌍", "World",           ["Earth", "Gea", "Terra"], [("UTC", "UTC")])
+countries["UTC"]    = create_country("UTC",    "🌍", "World",           ["Earth", "Gea", "Terra"], [("UTC", "UTC")])
 
 
 
 # Step 5: add a placeholder for the remaining timezones of the library
 missing_timezones = pytz.common_timezones_set - REMOVED_TIMEZONES
-for country in dictionary:
-    for timezone, _ in dictionary[country].timezones:
+for country in countries:
+    for timezone, _ in countries[country]["timezones"]:
         missing_timezones -= {timezone}
-dictionary[""] = Country("", "🏳️", "", list(), list(map(lambda x: (x, get_city_from_timezone(x)), missing_timezones)))
+countries[""] = create_country("", "🏳️", "", list(), list(map(lambda x: (x, get_city_from_timezone(x)), missing_timezones)))
 
 
 
 # Step 6: store on disk
-#pickle.dump(dictionary, open("db.p", "wb"))
+with open("countries.json", "w") as dump:
+    dump.write(json.dumps(countries, indent=2))
 
 
 
 # Step 7: debug
-for elem in dictionary:
-    print(dictionary[elem])
+for elem in countries:
+    print(countries[elem])
 
+
+
+### CITIES
+
+def create_city(name, country, region, timezone):
+    return {
+        "name"     : name,
+        "country"  : country,
+        "region"   : region,
+        "timezone" : timezone
+    }
+
+
+
+# Step 1: get available data from "cities15000.txt"
+cities = dict()
+
+with open("cities15000.txt", "r") as dump:
+    while True:
+        line = dump.readline()
+        if line == "":
+            break
+        
+        city_record = line.split("\t")
+        
+        purified_name = unidecode.unidecode(city_record[1].lower())
+        name          = city_record[1]
+        country       = city_record[8]
+        region        = city_record[10]
+        timezone      = city_record[17]
+
+        if purified_name not in cities:
+            cities[purified_name] = [create_city(name, country, region, timezone)]
+        else:
+            cities[purified_name].append(create_city(name, country, region, timezone))
+
+
+
+# Step 2: store on disk
+with open("cities.json", "w") as dump:
+    dump.write(json.dumps(cities, indent=2))

@@ -1,15 +1,19 @@
-from collections import namedtuple
 import unidecode
 import datetime
 import pickle
 import pytz
+import json
 import re
 
-#Country = namedtuple("Country", ["code", "emoji", "name", "timezones"])
 
-#dictionary = pickle.load(open("db.p", "rb"))
 
-from generator import dictionary
+with open("countries.json", "r") as dump:
+    countries = json.loads(dump.read())
+
+with open("cities.json", "r") as dump:
+    cities = json.loads(dump.read())
+
+
 
 def strict_search(query, string):
     query = unidecode.unidecode(query)
@@ -30,8 +34,8 @@ def fuzzy_equal(query, string):
 
 def generate_time_from_country(country, print_name=False):
     result = []
-    for timezone, city in country.timezones:
-        result.append(generate_time(country.code, country.emoji, country.name, timezone, city, print_name))
+    for timezone, city in country["timezones"]:
+        result.append(generate_time(country["code"], country["emoji"], country["name"], timezone, city, print_name))
     return '\n'.join(result)
 
 def generate_time(code, emoji, name, timezone, city, print_name=True):
@@ -44,53 +48,83 @@ def generate_time(code, emoji, name, timezone, city, print_name=True):
 
 
 
-def logic(query):
-    response = []
+def search_by_country_code(query):
+    country_code = query.upper()
+    if country_code in countries:
+        return generate_time_from_country(countries[country_code])
+    return ""
 
+def search_by_country_full(query):    
+    # search a country by full name or alias
+    for key in countries:
+        if any(map(lambda string: fuzzy_equal(query, string), [countries[key]["name"]] + countries[key]["aliases"])):
+            return generate_time_from_country(countries[key], False)
+    return ""
+   
+def search_by_city_tz(query):
+    for key in countries:
+        country = countries[key]
+        for timezone, city in country["timezones"]:
+            if fuzzy_search(query, city):
+                return generate_time(country["code"], country["emoji"], country["name"], timezone, city)
+    return ""
+
+def search_by_city_db(query):
+    result = []
+    city_key = unidecode.unidecode(query.lower())
+    if city_key in cities:
+        for city in cities[city_key]:
+            short_code  = city["country"]
+            long_code   = short_code + "-" + city["region"]
+            country     = countries[long_code] if long_code in countries else countries[short_code]
+            result.append(generate_time(country["code"], country["emoji"], country["name"], city["timezone"], city["name"]))
+    return "\n".join(result)
+
+def search_by_country_subword(query):    
+    # if you have not found a country, search by whole word only, so "man" matches with "Isle of Man" but not with "Germany"
+    for key in countries:
+        if any(map(lambda string: strict_search(query, string), [countries[key]["name"]] + countries[key]["aliases"])):
+            return generate_time_from_country(countries[key], True)
+    return ""
+
+def search_by_country_substring(query):    
+    # if you have not found a country, do a fuzzy research (this way "Ital" matches with "Italy")
+    for key in countries:
+        if any(map(lambda string: fuzzy_search(query, string), [countries[key]["name"]] + countries[key]["aliases"])):
+            return generate_time_from_country(countries[key], True)
+    return ""
+
+
+
+def logic(query):
     # garbage
     if len(query) < 2:
-        return ''
+        return ""
 
-    # query by country code
-    country_code = query.upper()
-    if country_code in dictionary:
-        response.append(generate_time_from_country(dictionary[country_code]))
-    else:
-        # query by country name
-        country_code = None
-        
-        for key in dictionary:
-            # search a country by full name or alias
-            if any(map(lambda string: fuzzy_equal(query, string), [dictionary[key].name] + dictionary[key].aliases)):
-                country_code = key
-                print_name = False
-                break
-        if country_code == None:
-            # if you have not found a country, search by whole word only, so "man" matches with "Isle of Man" but not with "Germany"
-            for key in dictionary:
-                if any(map(lambda string: strict_search(query, string), [dictionary[key].name] + dictionary[key].aliases)):
-                    country_code = key
-                    print_name = True
-                    break
-        if country_code == None:
-            # if you have not found a country, do a fuzzy research (this way "Ital" matches with "Italy")
-            for key in dictionary:
-                if any(map(lambda string: fuzzy_search(query, string), [dictionary[key].name] + dictionary[key].aliases)):
-                    country_code = key
-                    print_name = True
-                    break
-        
-        if country_code != None:
-            # query by country name
-            response.append(generate_time_from_country(dictionary[country_code], print_name))
-        else:
-            # query by city name
-            for country_code in dictionary:
-                if len(response) != 0:
-                    break
-                country = dictionary[country_code]
-                for timezone, city in country.timezones:
-                    if fuzzy_search(query, city):
-                        response.append(generate_time(country.code, country.emoji, country.name, timezone, city))
+    # PRIORITY:
+    # - Country code
+    # - Country name (full)
+    # - City name (from timezone)
+    # - City name (from database)
+    # - Country name (subword)
+    # - Country name (substring)
 
-    return '\n'.join(response)
+    response = search_by_country_code(query)
+    if response: return response
+
+    response = search_by_country_full(query)
+    if response: return response
+    
+    response = search_by_city_tz(query)
+    if response: return response
+    
+    response = search_by_city_db(query)
+    if response: return response
+    
+    response = search_by_country_subword(query)
+    if response: return response
+    
+    response = search_by_country_substring(query)
+    if response: return response
+    
+    return ""
