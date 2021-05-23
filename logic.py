@@ -94,6 +94,28 @@ def search_by_country_substring(query):
             return generate_time_from_country(countries[key], True)
     return ""
 
+def search_by_city_subword(query):
+    result = []
+    for city_key in cities:
+        if strict_search(query, city_key):
+            for city in cities[city_key]:
+                short_code  = city["country"]
+                long_code   = short_code + "-" + city["region"]
+                country     = countries[long_code] if long_code in countries else countries[short_code]
+                result.append(generate_time(country["code"], country["emoji"], country["name"], city["timezone"], city["name"]))
+    return "\n".join(result)
+
+def search_by_city_substring(query):
+    result = []
+    for city_key in cities:
+        if fuzzy_search(query, city_key):
+            for city in cities[city_key]:
+                short_code  = city["country"]
+                long_code   = short_code + "-" + city["region"]
+                country     = countries[long_code] if long_code in countries else countries[short_code]
+                result.append(generate_time(country["code"], country["emoji"], country["name"], city["timezone"], city["name"]))
+    return "\n".join(result)
+
 
 
 def logic(query):
@@ -108,23 +130,23 @@ def logic(query):
     # - City name (from database)
     # - Country name (subword)
     # - Country name (substring)
+    # - City name (subword)
+    # - City name (substring)
 
-    response = search_by_country_code(query)
-    if response: return response
+    researchers = [
+        search_by_country_code,
+        search_by_country_full,
+        search_by_city_tz,
+        search_by_city_db,
+        search_by_country_subword,
+        search_by_country_substring,
+        search_by_city_subword,
+        search_by_city_substring
+    ]
+    
+    for research in researchers:
+        response = research(query)
+        if response:
+            return response
 
-    response = search_by_country_full(query)
-    if response: return response
-    
-    response = search_by_city_tz(query)
-    if response: return response
-    
-    response = search_by_city_db(query)
-    if response: return response
-    
-    response = search_by_country_subword(query)
-    if response: return response
-    
-    response = search_by_country_substring(query)
-    if response: return response
-    
     return ""
