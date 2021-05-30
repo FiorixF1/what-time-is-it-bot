@@ -136,10 +136,10 @@ def logic(query):
     researchers = [
         search_by_country_code,
         search_by_country_full,
-        search_by_city_tz,
         search_by_city_db,
         search_by_country_subword,
         search_by_country_substring,
+        search_by_city_tz,
         search_by_city_subword,
         search_by_city_substring
     ]
