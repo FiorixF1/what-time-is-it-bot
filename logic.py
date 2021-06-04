@@ -119,6 +119,9 @@ def search_by_city_substring(query):
 
 
 def logic(query):
+    # anti-troll filter
+    query = re.sub(r"[^\x00-\x7F\x80-\xFF\u0100-\u017F\u0180-\u024F\u1E00-\u1EFF]", "", query)
+
     # garbage
     if len(query) < 2:
         return ""
