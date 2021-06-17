@@ -2213,7 +2213,9 @@
     "code": "NF",
     "emoji": "\ud83c\uddf3\ud83c\uddeb",
     "name": "Norfolk Island",
-    "aliases": [],
+    "aliases": [
+      "Norfolk"
+    ],
     "timezones": [
       [
         "Pacific/Norfolk",
@@ -3422,6 +3424,18 @@
       ]
     ]
   },
+  "RS-VO": {
+    "code": "RS-VO",
+    "emoji": "\ud83c\uddf7\ud83c\uddf8",
+    "name": "Vojvodina",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Belgrade",
+        "Novi Sad"
+      ]
+    ]
+  },
   "XK": {
     "code": "XK",
     "emoji": "\ud83c\uddfd\ud83c\uddf0",
@@ -3530,20 +3544,32 @@
       ]
     ]
   },
-  "KGD": {
-    "code": "KGD",
-    "emoji": "\ud83c\uddf7\ud83c\uddfa\udb40\udc67\udb40\udc62\udb40\udc77\udb40\udc6c\udb40\udc73\udb40\udc7f",
-    "name": "Russia",
+  "IT-25": {
+    "code": "IT-25",
+    "emoji": "\ud83c\uddee\ud83c\uddf9",
+    "name": "Padania",
     "aliases": [],
     "timezones": [
       [
-        "Europe/Kaliningrad",
-        "K\u00f6nigsberg"
+        "Europe/Rome",
+        "Milan"
       ]
     ]
   },
-  "UA-43": {
-    "code": "UA-43",
+  "IT-72": {
+    "code": "IT-72",
+    "emoji": "\ud83c\uddee\ud83c\uddf9",
+    "name": "Terronia",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Rome",
+        "Naples"
+      ]
+    ]
+  },
+  "UA-11": {
+    "code": "UA-11",
     "emoji": "\ud83c\uddfa\ud83c\udde6",
     "name": "Crimea",
     "aliases": [],
@@ -3551,6 +3577,18 @@
       [
         "Europe/Simferopol",
         "Simferopol"
+      ]
+    ]
+  },
+  "ID-BA": {
+    "code": "ID-BA",
+    "emoji": "\ud83c\uddee\ud83c\udde9",
+    "name": "Bali",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Makassar",
+        "Denpasar"
       ]
     ]
   },
@@ -3575,18 +3613,6 @@
       [
         "Asia/Pontianak",
         "Pontianak"
-      ]
-    ]
-  },
-  "ID-NU": {
-    "code": "ID-NU",
-    "emoji": "\ud83c\uddee\ud83c\udde9",
-    "name": "Nusa Tenggara",
-    "aliases": [],
-    "timezones": [
-      [
-        "Asia/Makassar",
-        "Bali"
       ]
     ]
   },
@@ -3633,12 +3659,40 @@
     "aliases": [],
     "timezones": [
       [
-        "US/Alaska",
+        "America/Anchorage",
         "Anchorage"
       ],
       [
         "America/Adak",
         "Adak"
+      ]
+    ]
+  },
+  "US-AZ": {
+    "code": "US-AZ",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8\udb40\udc67\udb40\udc62\udb40\udc77\udb40\udc6c\udb40\udc73\udb40\udc7f",
+    "name": "Arizona",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Phoenix",
+        "Phoenix"
+      ],
+      [
+        "America/Shiprock",
+        "Tuba City"
+      ]
+    ]
+  },
+  "US-AZx": {
+    "code": "US-AZx",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8\udb40\udc67\udb40\udc62\udb40\udc77\udb40\udc6c\udb40\udc73\udb40\udc7f",
+    "name": "Navajo Nation",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Shiprock",
+        "Window Rock"
       ]
     ]
   },
@@ -3649,20 +3703,8 @@
     "aliases": [],
     "timezones": [
       [
-        "US/Pacific",
+        "America/Los_Angeles",
         "Los Angeles"
-      ]
-    ]
-  },
-  "US-HI": {
-    "code": "US-HI",
-    "emoji": "\ud83c\uddfa\ud83c\uddf8\udb40\udc67\udb40\udc62\udb40\udc77\udb40\udc6c\udb40\udc73\udb40\udc7f",
-    "name": "Hawaii",
-    "aliases": [],
-    "timezones": [
-      [
-        "US/Hawaii",
-        "Honolulu"
       ]
     ]
   },
@@ -3673,12 +3715,48 @@
     "aliases": [],
     "timezones": [
       [
-        "US/Eastern",
+        "America/New_York",
         "Miami"
       ],
       [
-        "US/Central",
+        "America/Chicago",
         "Pensacola"
+      ]
+    ]
+  },
+  "US-HI": {
+    "code": "US-HI",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8\udb40\udc67\udb40\udc62\udb40\udc77\udb40\udc6c\udb40\udc73\udb40\udc7f",
+    "name": "Hawaii",
+    "aliases": [],
+    "timezones": [
+      [
+        "Pacific/Honolulu",
+        "Honolulu"
+      ]
+    ]
+  },
+  "US-NV": {
+    "code": "US-NV",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8\udb40\udc67\udb40\udc62\udb40\udc77\udb40\udc6c\udb40\udc73\udb40\udc7f",
+    "name": "Nevada",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/Los_Angeles",
+        "Las Vegas"
+      ]
+    ]
+  },
+  "US-NY": {
+    "code": "US-NY",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8\udb40\udc67\udb40\udc62\udb40\udc77\udb40\udc6c\udb40\udc73\udb40\udc7f",
+    "name": "New York",
+    "aliases": [],
+    "timezones": [
+      [
+        "America/New_York",
+        "New York City"
       ]
     ]
   },
@@ -3689,7 +3767,7 @@
     "aliases": [],
     "timezones": [
       [
-        "US/Central",
+        "America/Chicago",
         "Dallas"
       ]
     ]
@@ -3715,6 +3793,46 @@
       [
         "Asia/Shanghai",
         "Lhasa"
+      ]
+    ]
+  },
+  "LL": {
+    "code": "LL",
+    "emoji": "\ud83c\udff3\ufe0f",
+    "name": "Liberland",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/Prague",
+        "Liberland"
+      ]
+    ]
+  },
+  "RX": {
+    "code": "RX",
+    "emoji": "\ud83c\udff3\ufe0f",
+    "name": "RadioSex",
+    "aliases": [],
+    "timezones": [
+      [
+        "Asia/Dili",
+        "Motore"
+      ],
+      [
+        "Asia/Dili",
+        "Arese"
+      ],
+      [
+        "Asia/Dili",
+        "Rock Raider"
+      ],
+      [
+        "Europe/Rome",
+        "Mici e Micetti QUEST"
+      ],
+      [
+        "Pacific/Nauru",
+        "Nauru"
       ]
     ]
   },

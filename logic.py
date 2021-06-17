@@ -1,9 +1,12 @@
 import unidecode
 import datetime
+import random
 import pickle
 import pytz
 import json
 import re
+
+MAX_LENGTH = 32
 
 
 
@@ -14,6 +17,11 @@ with open("cities.json", "r") as dump:
     cities = json.loads(dump.read())
 
 
+
+def regex_search(query, string):
+    query = unidecode.unidecode(query)
+    string = unidecode.unidecode(string)
+    return re.search(rf"{query}", string, re.IGNORECASE)
 
 def strict_search(query, string):
     query = unidecode.unidecode(query)
@@ -78,7 +86,8 @@ def search_by_city_db(query):
             long_code   = short_code + "-" + city["region"]
             country     = countries[long_code] if long_code in countries else countries[short_code]
             result.append(generate_time(country["code"], country["emoji"], country["name"], city["timezone"], city["name"]))
-    return "\n".join(result)
+    random.shuffle(result)
+    return "\n".join(result[:MAX_LENGTH])
 
 def search_by_country_subword(query):    
     # if you have not found a country, search by whole word only, so "man" matches with "Isle of Man" but not with "Germany"
@@ -103,7 +112,8 @@ def search_by_city_subword(query):
                 long_code   = short_code + "-" + city["region"]
                 country     = countries[long_code] if long_code in countries else countries[short_code]
                 result.append(generate_time(country["code"], country["emoji"], country["name"], city["timezone"], city["name"]))
-    return "\n".join(result)
+    random.shuffle(result)
+    return "\n".join(result[:MAX_LENGTH])
 
 def search_by_city_substring(query):
     result = []
@@ -114,25 +124,46 @@ def search_by_city_substring(query):
                 long_code   = short_code + "-" + city["region"]
                 country     = countries[long_code] if long_code in countries else countries[short_code]
                 result.append(generate_time(country["code"], country["emoji"], country["name"], city["timezone"], city["name"]))
-    return "\n".join(result)
+    random.shuffle(result)
+    return "\n".join(result[:MAX_LENGTH])
+
+def search_by_city_regex(query):
+    result = []
+    for city_key in cities:
+        if regex_search(query, city_key):
+            for city in cities[city_key]:
+                short_code  = city["country"]
+                long_code   = short_code + "-" + city["region"]
+                country     = countries[long_code] if long_code in countries else countries[short_code]
+                result.append(generate_time(country["code"], country["emoji"], country["name"], city["timezone"], city["name"]))
+    random.shuffle(result)
+    return "\n".join(result[:MAX_LENGTH])
 
 
 
 def logic(query):
     # anti-troll filter
+    query = query[:128]
     query = re.sub(r"[^\x00-\x7F\x80-\xFF\u0100-\u017F\u0180-\u024F\u1E00-\u1EFF]", "", query)
+    query = query.strip()
 
     # garbage
     if len(query) < 2:
         return ""
 
+    REGEX_CHARS = ".*+?[]{}^$"
+    REGEX = any(map(lambda ch: ch in REGEX_CHARS, query))
+
+    if REGEX:
+        return search_by_city_regex(query)
+
     # PRIORITY:
     # - Country code
     # - Country name (full)
-    # - City name (from timezone)
     # - City name (from database)
     # - Country name (subword)
     # - Country name (substring)
+    # - City name (from timezone)
     # - City name (subword)
     # - City name (substring)
 

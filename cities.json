@@ -3695,6 +3695,14 @@
       "timezone": "Europe/Vienna"
     }
   ],
+  "saalfelden am steinernen meer": [
+    {
+      "name": "Saalfelden am Steinernen Meer",
+      "country": "AT",
+      "region": "05",
+      "timezone": "Europe/Vienna"
+    }
+  ],
   "pradl": [
     {
       "name": "Pradl",
@@ -6883,7 +6891,7 @@
   ],
   "lokbatan": [
     {
-      "name": "L\u00f6kbatan",
+      "name": "Lokbatan",
       "country": "AZ",
       "region": "09",
       "timezone": "Asia/Baku"
@@ -22591,6 +22599,14 @@
       "timezone": "America/Toronto"
     }
   ],
+  "esquimalt": [
+    {
+      "name": "Esquimalt",
+      "country": "CA",
+      "region": "02",
+      "timezone": "America/Vancouver"
+    }
+  ],
   "flemingdon park": [
     {
       "name": "Flemingdon Park",
@@ -31175,9 +31191,11 @@
       "country": "CN",
       "region": "30",
       "timezone": "Asia/Shanghai"
-    },
+    }
+  ],
+  "hepu": [
     {
-      "name": "Lianzhou",
+      "name": "Hepu",
       "country": "CN",
       "region": "16",
       "timezone": "Asia/Shanghai"
@@ -74035,6 +74053,14 @@
       "timezone": "Europe/Budapest"
     }
   ],
+  "angyalfold": [
+    {
+      "name": "Angyalf\u00f6ld",
+      "country": "HU",
+      "region": "05",
+      "timezone": "Europe/Budapest"
+    }
+  ],
   "ajka": [
     {
       "name": "Ajka",
@@ -98483,6 +98509,14 @@
       "timezone": "Asia/Baghdad"
     }
   ],
+  "hajiawa": [
+    {
+      "name": "Hajiawa",
+      "country": "IQ",
+      "region": "05",
+      "timezone": "Asia/Baghdad"
+    }
+  ],
   "sinjar": [
     {
       "name": "Sinj\u0101r",
@@ -104457,6 +104491,12 @@
       "country": "IT",
       "region": "09",
       "timezone": "Europe/Rome"
+    },
+    {
+      "name": "Arese",
+      "country": "RX",
+      "region": "02",
+      "timezone": "Asia/Dili"
     }
   ],
   "ardea": [
@@ -109444,14 +109484,6 @@
       "name": "Enzan",
       "country": "JP",
       "region": "46",
-      "timezone": "Asia/Tokyo"
-    }
-  ],
-  "daitocho": [
-    {
-      "name": "Dait\u014dch\u014d",
-      "country": "JP",
-      "region": "32",
       "timezone": "Asia/Tokyo"
     }
   ],
@@ -143758,6 +143790,14 @@
       "name": "Zavolzh\u2019ye",
       "country": "RU",
       "region": "51",
+      "timezone": "Europe/Moscow"
+    }
+  ],
+  "zavety il'icha": [
+    {
+      "name": "Zavety Il\u2019icha",
+      "country": "RU",
+      "region": "47",
       "timezone": "Europe/Moscow"
     }
   ],
@@ -193729,6 +193769,110 @@
       "country": "ZW",
       "region": "10",
       "timezone": "Africa/Harare"
+    }
+  ],
+  "area 51": [
+    {
+      "name": "Area 51",
+      "country": "US",
+      "region": "NV",
+      "timezone": "America/Los_Angeles"
+    }
+  ],
+  "liberty city": [
+    {
+      "name": "Liberty City",
+      "country": "US",
+      "region": "NY",
+      "timezone": "America/New_York"
+    }
+  ],
+  "vice city": [
+    {
+      "name": "Vice City",
+      "country": "US",
+      "region": "FL",
+      "timezone": "America/New_York"
+    }
+  ],
+  "los santos": [
+    {
+      "name": "Los Santos",
+      "country": "US",
+      "region": "CA",
+      "timezone": "America/Los_Angeles"
+    }
+  ],
+  "san fierro": [
+    {
+      "name": "San Fierro",
+      "country": "US",
+      "region": "CA",
+      "timezone": "America/Los_Angeles"
+    }
+  ],
+  "las venturas": [
+    {
+      "name": "Las Venturas",
+      "country": "US",
+      "region": "NV",
+      "timezone": "America/Los_Angeles"
+    }
+  ],
+  "chornobyl'": [
+    {
+      "name": "Chornobyl\u2019",
+      "country": "UA",
+      "region": "13",
+      "timezone": "Europe/Kiev"
+    }
+  ],
+  "chernobyl'": [
+    {
+      "name": "Chernobyl\u2019",
+      "country": "UA",
+      "region": "13",
+      "timezone": "Europe/Kiev"
+    }
+  ],
+  "pripyat": [
+    {
+      "name": "Pripyat",
+      "country": "UA",
+      "region": "13",
+      "timezone": "Europe/Kiev"
+    }
+  ],
+  "konigsberg": [
+    {
+      "name": "K\u00f6nigsberg",
+      "country": "RU",
+      "region": "23",
+      "timezone": "Europe/Kaliningrad"
+    }
+  ],
+  "motore": [
+    {
+      "name": "Motore",
+      "country": "RX",
+      "region": "01",
+      "timezone": "Asia/Dili"
+    }
+  ],
+  "rock raider": [
+    {
+      "name": "Rock Raider",
+      "country": "RX",
+      "region": "03",
+      "timezone": "Asia/Dili"
+    }
+  ],
+  "mici e micetti quest": [
+    {
+      "name": "Mici e Micetti QUEST",
+      "country": "RX",
+      "region": "04",
+      "timezone": "Europe/Rome"
     }
   ]
 }
