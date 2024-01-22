@@ -174,7 +174,7 @@ add_alias("VA", "Vatican")
 
 
 
-# Step 4: add countries and regions
+# Step 4: add countries and regions (code is ISO 3166-2 from Wikipedia)
 countries["BV"]     = create_country("BV",     "🇧🇻", "Bouvet Island",   list(), [("Europe/Oslo", "Bouvet")])
 
 countries["RS-VO"]  = create_country("RS-VO",  "🇷🇸", "Vojvodina",       list(), [("Europe/Belgrade", "Novi Sad")])
@@ -183,11 +183,12 @@ countries["XK"]     = create_country("XK",     "🇽🇰", "Kosovo",          li
 countries["GB-ENG"] = create_country("GB-ENG", "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "England",         list(), [("Europe/London", "London")])
 countries["GB-SCT"] = create_country("GB-SCT", "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "Scotland",        list(), [("Europe/London", "Edimburgh")])
 countries["GB-WLS"] = create_country("GB-WLS", "🏴󠁧󠁢󠁷󠁬󠁳󠁿", "Wales",           list(), [("Europe/London", "Cardiff")])
+countries["GB-NIR"] = create_country("GB-NIR", "🇬🇧", "Northern Ireland",list(), [("Europe/London", "Belfast")])
 
-countries["FM-TRK"] = create_country("FM-TRK",    "🇫🇲", "Chuuk",           list(), [("Pacific/Chuuk", "Chuuk")])
-countries["FM-KSA"] = create_country("FM-KSA",    "🇫🇲", "Kosrae",          list(), [("Pacific/Kosrae", "Kosrae")])
-countries["FM-PNI"] = create_country("FM-PNI",    "🇫🇲", "Pohnpei",         list(), [("Pacific/Pohnpei", "Pohnpei")])
-countries["FM-YAP"] = create_country("FM-YAP",    "🇫🇲", "Yap",             list(), [("Pacific/Chuuk", "Yap")])
+countries["FM-TRK"] = create_country("FM-TRK", "🇫🇲", "Chuuk",           list(), [("Pacific/Chuuk", "Chuuk")])
+countries["FM-KSA"] = create_country("FM-KSA", "🇫🇲", "Kosrae",          list(), [("Pacific/Kosrae", "Kosrae")])
+countries["FM-PNI"] = create_country("FM-PNI", "🇫🇲", "Pohnpei",         list(), [("Pacific/Pohnpei", "Pohnpei")])
+countries["FM-YAP"] = create_country("FM-YAP", "🇫🇲", "Yap",             list(), [("Pacific/Chuuk", "Yap")])
 
 countries["RU-CE"]  = create_country("RU-CE",  "🇷🇺󠁧󠁢󠁷󠁬󠁳󠁿", "Chechnya",        list(), [("Europe/Moscow", "Grozny")])
 
@@ -316,17 +317,39 @@ with open("cities15000.txt", "r", encoding='utf8') as dump:
 
 
 
-# Step 2: add custom cities
+# Step 2: add custom cities and aliases
 add_city("Area 51",              "US", "NV", "America/Los_Angeles")
 add_city("Liberty City",         "US", "NY", "America/New_York")
 add_city("Vice City",            "US", "FL", "America/New_York")
 add_city("Los Santos",           "US", "CA", "America/Los_Angeles")
 add_city("San Fierro",           "US", "CA", "America/Los_Angeles")
 add_city("Las Venturas",         "US", "NV", "America/Los_Angeles")
+
 add_city("Chornobyl\u2019",      "UA", "13", "Europe/Kiev")  # real spelling
 add_city("Chernobyl\u2019",      "UA", "13", "Europe/Kiev")  # common spelling
 add_city("Pripyat",              "UA", "13", "Europe/Kiev")
+
 add_city("Königsberg",           "RU", "23", "Europe/Kaliningrad")
+
+add_city("Nagyvárad",            "RO", "05", "Europe/Bucharest")
+add_city("Temesvár",             "RO", "36", "Europe/Bucharest")
+add_city("Kolozsvár",            "RO", "13", "Europe/Bucharest")
+add_city("Brassó",               "RO", "09", "Europe/Bucharest")
+add_city("Marosvásárhely",       "RO", "27", "Europe/Bucharest")
+add_city("Sepsiszentgyörgy",     "RO", "15", "Europe/Bucharest")
+add_city("Csíkszereda",          "RO", "20", "Europe/Bucharest")
+add_city("Székelyudvarhely",     "RO", "20", "Europe/Bucharest")
+add_city("Kézdivásárhely",       "RO", "15", "Europe/Bucharest")
+
+add_city("Ungvár",               "UK", "25", "Europe/Kyiv")
+add_city("Beregszász",           "UK", "25", "Europe/Kyiv")
+add_city("Munkács",              "UK", "25", "Europe/Kyiv")
+add_city("Huszt",                "UK", "25", "Europe/Kyiv")
+
+add_city("Bozen",                "IT", "17", "Europe/Rome")
+add_city("Capodistria",          "SI", "50", "Europe/Ljubljana")
+add_city("Fiume",                "HR", "12", "Europe/Zagreb")
+
 add_city("Motore",               "RX", "01", "Asia/Dili")
 add_city("Arese",                "RX", "02", "Asia/Dili")
 add_city("Rock Raider",          "RX", "03", "Asia/Dili")

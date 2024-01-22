@@ -1609,8 +1609,8 @@
         "Tarawa"
       ],
       [
-        "Pacific/Enderbury",
-        "Enderbury"
+        "Pacific/Kanton",
+        "Kanton"
       ],
       [
         "Pacific/Kiritimati",
@@ -2138,6 +2138,10 @@
       [
         "America/Chihuahua",
         "Chihuahua"
+      ],
+      [
+        "America/Ciudad_Juarez",
+        "Ciudad Juarez"
       ],
       [
         "America/Tijuana",
@@ -3147,8 +3151,8 @@
     "aliases": [],
     "timezones": [
       [
-        "Europe/Kiev",
-        "Kiev"
+        "Europe/Kyiv",
+        "Kyiv"
       ]
     ]
   },
@@ -3481,6 +3485,18 @@
       [
         "Europe/London",
         "Cardiff"
+      ]
+    ]
+  },
+  "GB-NIR": {
+    "code": "GB-NIR",
+    "emoji": "\ud83c\uddec\ud83c\udde7",
+    "name": "Northern Ireland",
+    "aliases": [],
+    "timezones": [
+      [
+        "Europe/London",
+        "Belfast"
       ]
     ]
   },
